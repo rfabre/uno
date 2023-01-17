@@ -5,84 +5,8 @@ namespace Microsoft.UI.Xaml.Controls
 	#if false || false || false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class TextBox : global::Microsoft.UI.Xaml.Controls.IInputValidationControl
+	public  partial class TextBox 
 	{
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Microsoft.UI.Xaml.Controls.InputValidationContext ValidationContext
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member InputValidationContext TextBox.ValidationContext is not implemented in Uno.");
-			}
-			set
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "InputValidationContext TextBox.ValidationContext");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Microsoft.UI.Xaml.Controls.InputValidationMode InputValidationMode
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Controls.InputValidationMode)this.GetValue(InputValidationModeProperty);
-			}
-			set
-			{
-				this.SetValue(InputValidationModeProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Microsoft.UI.Xaml.DataTemplate ErrorTemplate
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.DataTemplate)this.GetValue(ErrorTemplateProperty);
-			}
-			set
-			{
-				this.SetValue(ErrorTemplateProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Microsoft.UI.Xaml.Controls.InputValidationKind InputValidationKind
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Controls.InputValidationKind)this.GetValue(InputValidationKindProperty);
-			}
-			set
-			{
-				this.SetValue(InputValidationKindProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Windows.Foundation.Collections.IObservableVector<global::Microsoft.UI.Xaml.Controls.InputValidationError> ValidationErrors
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member IObservableVector<InputValidationError> TextBox.ValidationErrors is not implemented in Uno.");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  bool HasValidationErrors
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member bool TextBox.HasValidationErrors is not implemented in Uno.");
-			}
-		}
-		#endif
 		// Skipping already declared property PlaceholderText
 		// Skipping already declared property PlaceholderForeground
 		// Skipping already declared property MaxLength
@@ -344,30 +268,6 @@ namespace Microsoft.UI.Xaml.Controls
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextReadingOrder)));
 		#endif
 		// Skipping already declared property TextWrappingProperty
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public static global::Microsoft.UI.Xaml.DependencyProperty ErrorTemplateProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(ErrorTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationKindProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(InputValidationKind), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationKind), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationKind)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationModeProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(InputValidationMode), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationMode), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationMode)));
-		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.TextBox.TextBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.TextBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.Text.get
@@ -492,23 +392,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CandidateWindowBoundsChanged.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.TextChanging.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.TextChanging.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationErrors.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HasValidationErrors.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationContext.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationContext.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ErrorTemplate.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ErrorTemplate.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationMode.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationMode.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationKind.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationKind.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HasValidationErrorsChanged.add
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HasValidationErrorsChanged.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationError.add
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationError.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ErrorTemplateProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationModeProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationKindProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.TextProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.MaxLengthProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.IsReadOnlyProperty.get
@@ -684,38 +567,5 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.HasValidationErrorsChangedEventArgs> HasValidationErrorsChanged
-		{
-			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> TextBox.HasValidationErrorsChanged");
-			}
-			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> TextBox.HasValidationErrorsChanged");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.InputValidationErrorEventArgs> ValidationError
-		{
-			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> TextBox.ValidationError");
-			}
-			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> TextBox.ValidationError");
-			}
-		}
-		#endif
-		// Processing: Microsoft.UI.Xaml.Controls.IInputValidationControl
 	}
 }

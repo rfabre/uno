@@ -22,15 +22,11 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
-		// Skipping already declared property IndeterminateSource
-		// Skipping already declared property DeterminateSource
 		// Skipping already declared property IsActiveProperty
 		// Skipping already declared property IsIndeterminateProperty
 		// Skipping already declared property MaximumProperty
 		// Skipping already declared property MinimumProperty
 		// Skipping already declared property ValueProperty
-		// Skipping already declared property DeterminateSourceProperty
-		// Skipping already declared property IndeterminateSourceProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.ProgressRing.ProgressRing()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.ProgressRing()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.IsActive.get
@@ -44,12 +40,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.Minimum.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.Maximum.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.Maximum.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.DeterminateSource.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.DeterminateSource.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.IndeterminateSource.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.IndeterminateSource.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.DeterminateSourceProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.IndeterminateSourceProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.IsActiveProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.IsIndeterminateProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ProgressRing.ValueProperty.get

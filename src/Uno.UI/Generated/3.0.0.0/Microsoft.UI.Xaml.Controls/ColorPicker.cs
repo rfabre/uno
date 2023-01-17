@@ -26,6 +26,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property ColorSpectrumShape
 		// Skipping already declared property ColorSpectrumComponents
 		// Skipping already declared property Color
+		// Skipping already declared property Orientation
 		// Skipping already declared property ColorProperty
 		// Skipping already declared property ColorSpectrumComponentsProperty
 		// Skipping already declared property ColorSpectrumShapeProperty
@@ -45,6 +46,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property MinSaturationProperty
 		// Skipping already declared property MinValueProperty
 		// Skipping already declared property PreviousColorProperty
+		// Skipping already declared property OrientationProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.ColorPicker.ColorPicker()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.ColorPicker()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.Color.get
@@ -87,6 +89,9 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.ColorSpectrumComponents.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.ColorChanged.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.ColorChanged.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.Orientation.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.Orientation.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.OrientationProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.ColorProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.PreviousColorProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColorPicker.IsAlphaEnabledProperty.get

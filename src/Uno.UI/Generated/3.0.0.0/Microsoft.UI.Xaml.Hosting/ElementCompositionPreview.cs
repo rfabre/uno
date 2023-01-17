@@ -15,7 +15,13 @@ namespace Microsoft.UI.Xaml.Hosting
 			throw new global::System.NotImplementedException("The member Visual ElementCompositionPreview.GetElementChildVisual(UIElement element) is not implemented in Uno.");
 		}
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Hosting.ElementCompositionPreview.SetElementChildVisual(Microsoft.UI.Xaml.UIElement, Microsoft.UI.Composition.Visual)
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public static void SetElementChildVisual( global::Microsoft.UI.Xaml.UIElement element,  global::Microsoft.UI.Composition.Visual visual)
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Hosting.ElementCompositionPreview", "void ElementCompositionPreview.SetElementChildVisual(UIElement element, Visual visual)");
+		}
+		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
 		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public static global::Microsoft.UI.Composition.CompositionPropertySet GetScrollViewerManipulationPropertySet( global::Microsoft.UI.Xaml.Controls.ScrollViewer scrollViewer)

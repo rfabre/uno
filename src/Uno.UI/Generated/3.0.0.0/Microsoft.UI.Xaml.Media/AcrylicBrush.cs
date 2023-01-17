@@ -22,12 +22,11 @@ namespace Microsoft.UI.Xaml.Media
 		}
 		#endif
 		// Skipping already declared property TintOpacity
-		// Skipping already declared property TintLuminosityOpacity
 		// Skipping already declared property TintColor
 		// Skipping already declared property AlwaysUseFallback
+		// Skipping already declared property TintLuminosityOpacity
 		// Skipping already declared property AlwaysUseFallbackProperty
 		// Skipping already declared property TintColorProperty
-		// Skipping already declared property TintLuminosityOpacityProperty
 		// Skipping already declared property TintOpacityProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
 		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
@@ -37,6 +36,7 @@ namespace Microsoft.UI.Xaml.Media
 			typeof(global::Microsoft.UI.Xaml.Media.AcrylicBrush), 
 			new FrameworkPropertyMetadata(default(global::System.TimeSpan)));
 		#endif
+		// Skipping already declared property TintLuminosityOpacityProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Media.AcrylicBrush.AcrylicBrush()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.AcrylicBrush()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintColor.get
@@ -49,10 +49,10 @@ namespace Microsoft.UI.Xaml.Media
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.AlwaysUseFallback.set
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintLuminosityOpacity.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintLuminosityOpacity.set
+		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintLuminosityOpacityProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintColorProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintOpacityProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintTransitionDurationProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.AlwaysUseFallbackProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintLuminosityOpacityProperty.get
 	}
 }

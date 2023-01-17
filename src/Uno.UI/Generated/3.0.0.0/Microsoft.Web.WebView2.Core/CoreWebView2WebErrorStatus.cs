@@ -56,6 +56,12 @@ namespace Microsoft.Web.WebView2.Core
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
 		UnexpectedError = 16,
 		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		ValidAuthenticationCredentialsRequired = 17,
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		ValidProxyAuthenticationRequired = 18,
+		#endif
 	}
 	#endif
 }

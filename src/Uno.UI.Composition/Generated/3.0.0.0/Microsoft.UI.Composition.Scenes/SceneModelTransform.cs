@@ -2,13 +2,13 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition.Scenes
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-	[global::Uno.NotImplemented]
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || false
+	[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__")]
 	#endif
 	public  partial class SceneModelTransform : global::Microsoft.UI.Composition.CompositionTransform
 	{
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector3 Translation
 		{
 			get
@@ -21,8 +21,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector3 Scale
 		{
 			get
@@ -35,8 +35,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector3 RotationAxis
 		{
 			get
@@ -49,8 +49,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  float RotationAngleInDegrees
 		{
 			get
@@ -63,8 +63,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  float RotationAngle
 		{
 			get
@@ -77,8 +77,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Quaternion Orientation
 		{
 			get
@@ -91,17 +91,17 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Orientation.get
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Orientation.set
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Scale.set
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Translation.get
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Translation.set
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.RotationAngle.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.RotationAngle.set
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.RotationAngleInDegrees.get
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Orientation.set
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Orientation.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.RotationAngleInDegrees.set
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.RotationAxis.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.RotationAxis.set
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Scale.get
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Scale.set
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Translation.get
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.SceneModelTransform.Translation.set
 	}
 }

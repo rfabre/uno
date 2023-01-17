@@ -19,6 +19,16 @@ namespace Microsoft.Web.WebView2.Core
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
 		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public  string UserDataFolder
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member string CoreWebView2Environment.UserDataFolder is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest CreateWebResourceRequest( string uri,  string Method,  global::Windows.Storage.Streams.IRandomAccessStream postData,  string Headers)
 		{
 			throw new global::System.NotImplementedException("The member CoreWebView2WebResourceRequest CoreWebView2Environment.CreateWebResourceRequest(string uri, string Method, IRandomAccessStream postData, string Headers) is not implemented in Uno.");
@@ -36,6 +46,32 @@ namespace Microsoft.Web.WebView2.Core
 		public  global::Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo CreateCoreWebView2PointerInfo()
 		{
 			throw new global::System.NotImplementedException("The member CoreWebView2PointerInfo CoreWebView2Environment.CreateCoreWebView2PointerInfo() is not implemented in Uno.");
+		}
+		#endif
+		// Forced skipping of method Microsoft.Web.WebView2.Core.CoreWebView2Environment.BrowserProcessExited.add
+		// Forced skipping of method Microsoft.Web.WebView2.Core.CoreWebView2Environment.BrowserProcessExited.remove
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public  global::Microsoft.Web.WebView2.Core.CoreWebView2PrintSettings CreatePrintSettings()
+		{
+			throw new global::System.NotImplementedException("The member CoreWebView2PrintSettings CoreWebView2Environment.CreatePrintSettings() is not implemented in Uno.");
+		}
+		#endif
+		// Forced skipping of method Microsoft.Web.WebView2.Core.CoreWebView2Environment.UserDataFolder.get
+		// Forced skipping of method Microsoft.Web.WebView2.Core.CoreWebView2Environment.ProcessInfosChanged.add
+		// Forced skipping of method Microsoft.Web.WebView2.Core.CoreWebView2Environment.ProcessInfosChanged.remove
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public  global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Web.WebView2.Core.CoreWebView2ProcessInfo> GetProcessInfos()
+		{
+			throw new global::System.NotImplementedException("The member IReadOnlyList<CoreWebView2ProcessInfo> CoreWebView2Environment.GetProcessInfos() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public  global::Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem CreateContextMenuItem( string Label,  global::Windows.Storage.Streams.IRandomAccessStream iconStream,  global::Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItemKind Kind)
+		{
+			throw new global::System.NotImplementedException("The member CoreWebView2ContextMenuItem CoreWebView2Environment.CreateContextMenuItem(string Label, IRandomAccessStream iconStream, CoreWebView2ContextMenuItemKind Kind) is not implemented in Uno.");
 		}
 		#endif
 		// Forced skipping of method Microsoft.Web.WebView2.Core.CoreWebView2Environment.BrowserVersionString.get
@@ -88,6 +124,38 @@ namespace Microsoft.Web.WebView2.Core
 		public static int CompareBrowserVersionString( string browserVersionString1,  string browserVersionString2)
 		{
 			throw new global::System.NotImplementedException("The member int CoreWebView2Environment.CompareBrowserVersionString(string browserVersionString1, string browserVersionString2) is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Environment, global::Microsoft.Web.WebView2.Core.CoreWebView2BrowserProcessExitedEventArgs> BrowserProcessExited
+		{
+			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.Web.WebView2.Core.CoreWebView2Environment", "event TypedEventHandler<CoreWebView2Environment, CoreWebView2BrowserProcessExitedEventArgs> CoreWebView2Environment.BrowserProcessExited");
+			}
+			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.Web.WebView2.Core.CoreWebView2Environment", "event TypedEventHandler<CoreWebView2Environment, CoreWebView2BrowserProcessExitedEventArgs> CoreWebView2Environment.BrowserProcessExited");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Environment, object> ProcessInfosChanged
+		{
+			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.Web.WebView2.Core.CoreWebView2Environment", "event TypedEventHandler<CoreWebView2Environment, object> CoreWebView2Environment.ProcessInfosChanged");
+			}
+			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.Web.WebView2.Core.CoreWebView2Environment", "event TypedEventHandler<CoreWebView2Environment, object> CoreWebView2Environment.ProcessInfosChanged");
+			}
 		}
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__

@@ -168,6 +168,29 @@ namespace Microsoft.UI.Xaml.Automation
 		// Skipping already declared property NameProperty
 		// Skipping already declared property PositionInSetProperty
 		// Skipping already declared property SizeOfSetProperty
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public static global::Microsoft.UI.Xaml.DependencyProperty AutomationControlTypeProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.RegisterAttached(
+			"AutomationControlType", typeof(global::Microsoft.UI.Xaml.Automation.Peers.AutomationControlType), 
+			typeof(global::Microsoft.UI.Xaml.Automation.AutomationProperties), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Automation.Peers.AutomationControlType)));
+		#endif
+		// Forced skipping of method Microsoft.UI.Xaml.Automation.AutomationProperties.AutomationControlTypeProperty.get
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public static global::Microsoft.UI.Xaml.Automation.Peers.AutomationControlType GetAutomationControlType( global::Microsoft.UI.Xaml.UIElement element)
+		{
+			return (global::Microsoft.UI.Xaml.Automation.Peers.AutomationControlType)element.GetValue(AutomationControlTypeProperty);
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public static void SetAutomationControlType( global::Microsoft.UI.Xaml.UIElement element,  global::Microsoft.UI.Xaml.Automation.Peers.AutomationControlType value)
+		{
+			element.SetValue(AutomationControlTypeProperty, value);
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.AutomationProperties.AcceleratorKeyProperty.get
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
 		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]

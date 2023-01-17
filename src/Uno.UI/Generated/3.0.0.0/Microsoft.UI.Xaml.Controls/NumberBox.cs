@@ -26,8 +26,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property Header
 		// Skipping already declared property Description
 		// Skipping already declared property AcceptsExpression
-		// Skipping already declared property TextAlignment
-		// Skipping already declared property InputScope
 		// Skipping already declared property AcceptsExpressionProperty
 		// Skipping already declared property DescriptionProperty
 		// Skipping already declared property HeaderProperty
@@ -47,8 +45,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property TextReadingOrderProperty
 		// Skipping already declared property ValidationModeProperty
 		// Skipping already declared property ValueProperty
-		// Skipping already declared property InputScopeProperty
-		// Skipping already declared property TextAlignmentProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.NumberBox.NumberBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.NumberBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.Minimum.get
@@ -91,12 +87,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.NumberFormatter.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.ValueChanged.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.ValueChanged.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.InputScope.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.InputScope.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.TextAlignment.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.TextAlignment.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.InputScopeProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.TextAlignmentProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.MinimumProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.MaximumProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NumberBox.ValueProperty.get

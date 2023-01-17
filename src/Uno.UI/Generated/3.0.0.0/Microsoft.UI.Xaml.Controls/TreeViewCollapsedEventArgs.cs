@@ -7,8 +7,8 @@ namespace Microsoft.UI.Xaml.Controls
 	#endif
 	public  partial class TreeViewCollapsedEventArgs 
 	{
-		// Skipping already declared property Item
 		// Skipping already declared property Node
+		// Skipping already declared property Item
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewCollapsedEventArgs.Node.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewCollapsedEventArgs.Item.get
 	}

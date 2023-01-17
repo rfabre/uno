@@ -12,6 +12,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property HeaderTemplate
 		// Skipping already declared property Header
 		// Skipping already declared property ExpandDirection
+		// Skipping already declared property TemplateSettings
 		// Skipping already declared property ExpandDirectionProperty
 		// Skipping already declared property HeaderProperty
 		// Skipping already declared property HeaderTemplateProperty
@@ -33,6 +34,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Expander.Expanding.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Expander.Collapsed.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Expander.Collapsed.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Expander.TemplateSettings.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Expander.HeaderProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Expander.HeaderTemplateProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Expander.HeaderTemplateSelectorProperty.get

@@ -1,5 +1,4 @@
-﻿#if !HAS_UNO_WINUI
-using System;
+﻿using System;
 using AVFoundation;
 using Uno.Extensions;
 using Uno.Media.Playback;
@@ -53,4 +52,3 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 	}
 }
-#endif

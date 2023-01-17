@@ -2,13 +2,13 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition.Scenes
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-	[global::Uno.NotImplemented]
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || false
+	[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__")]
 	#endif
 	public  partial class ScenePbrMaterial : global::Microsoft.UI.Composition.Scenes.SceneMaterial
 	{
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  float OcclusionStrength
 		{
 			get
@@ -21,8 +21,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.Scenes.SceneMaterialInput OcclusionInput
 		{
 			get
@@ -35,8 +35,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  float NormalScale
 		{
 			get
@@ -49,8 +49,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.Scenes.SceneMaterialInput NormalInput
 		{
 			get
@@ -63,8 +63,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  bool IsDoubleSided
 		{
 			get
@@ -77,8 +77,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.Scenes.SceneMaterialInput EmissiveInput
 		{
 			get
@@ -91,8 +91,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector3 EmissiveFactor
 		{
 			get
@@ -105,8 +105,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.Scenes.SceneAlphaMode AlphaMode
 		{
 			get
@@ -119,8 +119,8 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  float AlphaCutoff
 		{
 			get
@@ -133,23 +133,23 @@ namespace Microsoft.UI.Composition.Scenes
 			}
 		}
 		#endif
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.AlphaCutoff.get
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.IsDoubleSided.set
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.OcclusionStrength.set
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.EmissiveInput.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.AlphaCutoff.set
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.OcclusionStrength.get
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.NormalInput.get
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.EmissiveFactor.set
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.AlphaMode.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.AlphaMode.set
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.EmissiveInput.get
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.AlphaCutoff.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.EmissiveInput.set
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.EmissiveFactor.get
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.EmissiveFactor.set
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.IsDoubleSided.get
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.IsDoubleSided.set
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.NormalInput.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.NormalInput.set
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.NormalScale.get
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.EmissiveFactor.get
+		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.IsDoubleSided.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.NormalScale.set
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.OcclusionInput.get
 		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.OcclusionInput.set
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.OcclusionStrength.get
-		// Forced skipping of method Microsoft.UI.Composition.Scenes.ScenePbrMaterial.OcclusionStrength.set
 	}
 }

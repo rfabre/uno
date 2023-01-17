@@ -7,9 +7,6 @@ namespace Microsoft.UI.Xaml.Controls
 	{
 		// Skipping already declared field Microsoft.UI.Xaml.Controls.ContentDialogPlacement.Popup
 		// Skipping already declared field Microsoft.UI.Xaml.Controls.ContentDialogPlacement.InPlace
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		UnconstrainedPopup = 2,
-		#endif
 	}
 	#endif
 }

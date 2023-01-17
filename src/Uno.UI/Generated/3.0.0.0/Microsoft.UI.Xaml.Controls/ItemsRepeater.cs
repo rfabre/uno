@@ -14,14 +14,12 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property HorizontalCacheLength
 		// Skipping already declared property Background
 		// Skipping already declared property ItemsSourceView
-		// Skipping already declared property Animator
 		// Skipping already declared property BackgroundProperty
 		// Skipping already declared property HorizontalCacheLengthProperty
 		// Skipping already declared property ItemTemplateProperty
 		// Skipping already declared property ItemsSourceProperty
 		// Skipping already declared property LayoutProperty
 		// Skipping already declared property VerticalCacheLengthProperty
-		// Skipping already declared property AnimatorProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.ItemsRepeater.ItemsRepeater()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.ItemsRepeater()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.ItemsSource.get
@@ -46,9 +44,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.ElementClearing.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.ElementIndexChanged.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.ElementIndexChanged.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.Animator.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.Animator.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.AnimatorProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.ItemsSourceProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.ItemTemplateProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsRepeater.LayoutProperty.get

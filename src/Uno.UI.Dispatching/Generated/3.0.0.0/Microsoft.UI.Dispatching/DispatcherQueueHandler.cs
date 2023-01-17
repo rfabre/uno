@@ -2,5 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Dispatching
 {
-	// Skipping already declared delegate Microsoft.UI.Dispatching.DispatcherQueueHandler
+	#if false || false || NET461 || __WASM__ || __SKIA__ || false || false
+	public delegate void DispatcherQueueHandler();
+	#endif
 }

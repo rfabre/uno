@@ -35,6 +35,20 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public  global::Microsoft.UI.Xaml.Controls.PlayerAnimationOptimization AnimationOptimization
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Controls.PlayerAnimationOptimization)this.GetValue(AnimationOptimizationProperty);
+			}
+			set
+			{
+				this.SetValue(AnimationOptimizationProperty, value);
+			}
+		}
+		#endif
 		// Skipping already declared property AutoPlayProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
 		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
@@ -51,6 +65,14 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property PlaybackRateProperty
 		// Skipping already declared property SourceProperty
 		// Skipping already declared property StretchProperty
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		public static global::Microsoft.UI.Xaml.DependencyProperty AnimationOptimizationProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(AnimationOptimization), typeof(global::Microsoft.UI.Xaml.Controls.PlayerAnimationOptimization), 
+			typeof(global::Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.PlayerAnimationOptimization)));
+		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.AnimatedVisualPlayer()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.AnimatedVisualPlayer()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.Diagnostics.get
@@ -73,6 +95,9 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.Resume()
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.SetProgress(double)
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.Stop()
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.AnimationOptimization.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.AnimationOptimization.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.AnimationOptimizationProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.AutoPlayProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.DiagnosticsProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.DurationProperty.get

@@ -51,6 +51,9 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 			}
 		}
 		#endif
+		// Skipping already declared property PlacementTarget
+		// Skipping already declared property DesiredPlacement
+		// Skipping already declared property ActualPlacement
 		// Skipping already declared property ChildProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
 		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
@@ -73,6 +76,8 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
 		// Skipping already declared property VerticalOffsetProperty
+		// Skipping already declared property DesiredPlacementProperty
+		// Skipping already declared property PlacementTargetProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.Popup.Popup()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.Popup()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.Child.get
@@ -96,6 +101,15 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.Opened.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.Closed.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.Closed.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.PlacementTarget.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.PlacementTarget.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.DesiredPlacement.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.DesiredPlacement.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.ActualPlacement.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.ActualPlacementChanged.add
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.ActualPlacementChanged.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.PlacementTargetProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.DesiredPlacementProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.ChildProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.IsOpenProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.HorizontalOffsetProperty.get
@@ -106,5 +120,6 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.Popup.ShouldConstrainToRootBoundsProperty.get
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.Primitives.Popup.Closed
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.Primitives.Popup.Opened
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.Primitives.Popup.ActualPlacementChanged
 	}
 }

@@ -2,12 +2,18 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition
 {
-	#if false || false || false || false || false || false || false
+	#if false || false || NET461 || __WASM__ || __SKIA__ || false || false
 	public   enum CompositionGradientExtendMode 
 	{
-		// Skipping already declared field Microsoft.UI.Composition.CompositionGradientExtendMode.Clamp
-		// Skipping already declared field Microsoft.UI.Composition.CompositionGradientExtendMode.Wrap
-		// Skipping already declared field Microsoft.UI.Composition.CompositionGradientExtendMode.Mirror
+		#if false || false || false || __WASM__ || false || false || false
+		Clamp = 0,
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		Wrap = 1,
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		Mirror = 2,
+		#endif
 	}
 	#endif
 }

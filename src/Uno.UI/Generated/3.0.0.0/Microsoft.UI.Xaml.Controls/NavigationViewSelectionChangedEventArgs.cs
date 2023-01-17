@@ -8,8 +8,8 @@ namespace Microsoft.UI.Xaml.Controls
 	public  partial class NavigationViewSelectionChangedEventArgs 
 	{
 		// Skipping already declared property IsSettingsSelected
-		// Skipping already declared property RecommendedNavigationTransitionInfo
 		// Skipping already declared property SelectedItem
+		// Skipping already declared property RecommendedNavigationTransitionInfo
 		// Skipping already declared property SelectedItemContainer
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs.SelectedItem.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs.IsSettingsSelected.get

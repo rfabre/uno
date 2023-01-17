@@ -2,13 +2,13 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition.Interactions
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-	[global::Uno.NotImplemented]
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || false
+	[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__")]
 	#endif
 	public  partial class InteractionSourceConfiguration : global::Microsoft.UI.Composition.CompositionObject
 	{
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.Interactions.InteractionSourceRedirectionMode ScaleSourceMode
 		{
 			get
@@ -21,8 +21,8 @@ namespace Microsoft.UI.Composition.Interactions
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.Interactions.InteractionSourceRedirectionMode PositionYSourceMode
 		{
 			get
@@ -35,8 +35,8 @@ namespace Microsoft.UI.Composition.Interactions
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.Interactions.InteractionSourceRedirectionMode PositionXSourceMode
 		{
 			get
@@ -49,11 +49,11 @@ namespace Microsoft.UI.Composition.Interactions
 			}
 		}
 		#endif
-		// Forced skipping of method Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.PositionXSourceMode.get
 		// Forced skipping of method Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.PositionXSourceMode.set
+		// Forced skipping of method Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.ScaleSourceMode.set
+		// Forced skipping of method Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.PositionXSourceMode.get
 		// Forced skipping of method Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.PositionYSourceMode.get
 		// Forced skipping of method Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.PositionYSourceMode.set
 		// Forced skipping of method Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.ScaleSourceMode.get
-		// Forced skipping of method Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.ScaleSourceMode.set
 	}
 }

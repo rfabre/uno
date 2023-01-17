@@ -2,13 +2,13 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-	[global::Uno.NotImplemented]
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || false
+	[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__")]
 	#endif
 	public  partial class Vector2NaturalMotionAnimation : global::Microsoft.UI.Composition.NaturalMotionAnimation
 	{
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector2 InitialVelocity
 		{
 			get
@@ -21,8 +21,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector2? InitialValue
 		{
 			get
@@ -35,8 +35,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector2? FinalValue
 		{
 			get
@@ -49,11 +49,11 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.FinalValue.get
-		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.FinalValue.set
 		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.InitialValue.get
-		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.InitialValue.set
 		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.InitialVelocity.get
 		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.InitialVelocity.set
+		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.InitialValue.set
+		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.FinalValue.get
+		// Forced skipping of method Microsoft.UI.Composition.Vector2NaturalMotionAnimation.FinalValue.set
 	}
 }

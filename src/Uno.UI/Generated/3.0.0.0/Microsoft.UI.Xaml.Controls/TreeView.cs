@@ -8,6 +8,8 @@ namespace Microsoft.UI.Xaml.Controls
 	public  partial class TreeView : global::Microsoft.UI.Xaml.Controls.Control
 	{
 		// Skipping already declared property SelectionMode
+		// Skipping already declared property RootNodes
+		// Skipping already declared property SelectedNodes
 		// Skipping already declared property SelectedNode
 		// Skipping already declared property SelectedItem
 		// Skipping already declared property ItemsSource
@@ -18,9 +20,9 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property ItemContainerStyle
 		// Skipping already declared property CanReorderItems
 		// Skipping already declared property CanDragItems
-		// Skipping already declared property RootNodes
 		// Skipping already declared property SelectedItems
-		// Skipping already declared property SelectedNodes
+		// Skipping already declared property SelectedItemProperty
+		// Skipping already declared property SelectionModeProperty
 		// Skipping already declared property CanDragItemsProperty
 		// Skipping already declared property CanReorderItemsProperty
 		// Skipping already declared property ItemContainerStyleProperty
@@ -29,8 +31,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property ItemTemplateProperty
 		// Skipping already declared property ItemTemplateSelectorProperty
 		// Skipping already declared property ItemsSourceProperty
-		// Skipping already declared property SelectionModeProperty
-		// Skipping already declared property SelectedItemProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.TreeView.TreeView()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.TreeView()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.RootNodes.get
@@ -75,10 +75,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedItem.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedItem.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedItems.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectionChanged.add
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectionChanged.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedItemProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectionModeProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.CanDragItemsProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.CanReorderItemsProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.ItemTemplateProperty.get
@@ -87,11 +83,12 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.ItemContainerStyleSelectorProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.ItemContainerTransitionsProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.ItemsSourceProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedItemProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectionModeProperty.get
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.TreeView.Collapsed
-		// Skipping already declared event Microsoft.UI.Xaml.Controls.TreeView.DragItemsCompleted
-		// Skipping already declared event Microsoft.UI.Xaml.Controls.TreeView.DragItemsStarting
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.TreeView.Expanding
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.TreeView.ItemInvoked
-		// Skipping already declared event Microsoft.UI.Xaml.Controls.TreeView.SelectionChanged
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.TreeView.DragItemsCompleted
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.TreeView.DragItemsStarting
 	}
 }

@@ -2,18 +2,83 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition
 {
-	#if false || false || false || false || false || false || false
-	[global::Uno.NotImplemented]
+	#if false || false || NET461 || __WASM__ || __SKIA__ || false || false
+	[global::Uno.NotImplemented("NET461", "__WASM__", "__SKIA__")]
 	#endif
 	public  partial class Visual : global::Microsoft.UI.Composition.CompositionObject
 	{
-		// Skipping already declared property TransformMatrix
-		// Skipping already declared property Size
-		// Skipping already declared property Scale
-		// Skipping already declared property RotationAxis
-		// Skipping already declared property RotationAngleInDegrees
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  global::System.Numerics.Matrix4x4 TransformMatrix
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member Matrix4x4 Visual.TransformMatrix is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "Matrix4x4 Visual.TransformMatrix");
+			}
+		}
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  global::System.Numerics.Vector2 Size
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member Vector2 Visual.Size is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "Vector2 Visual.Size");
+			}
+		}
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  global::System.Numerics.Vector3 Scale
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member Vector3 Visual.Scale is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "Vector3 Visual.Scale");
+			}
+		}
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  global::System.Numerics.Vector3 RotationAxis
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member Vector3 Visual.RotationAxis is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "Vector3 Visual.RotationAxis");
+			}
+		}
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  float RotationAngleInDegrees
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member float Visual.RotationAngleInDegrees is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "float Visual.RotationAngleInDegrees");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  float RotationAngle
 		{
 			get
@@ -26,8 +91,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Quaternion Orientation
 		{
 			get
@@ -40,12 +105,64 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		// Skipping already declared property Opacity
-		// Skipping already declared property Offset
-		// Skipping already declared property IsVisible
-		// Skipping already declared property CompositeMode
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  float Opacity
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member float Visual.Opacity is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "float Visual.Opacity");
+			}
+		}
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  global::System.Numerics.Vector3 Offset
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member Vector3 Visual.Offset is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "Vector3 Visual.Offset");
+			}
+		}
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  bool IsVisible
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member bool Visual.IsVisible is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "bool Visual.IsVisible");
+			}
+		}
+		#endif
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  global::Microsoft.UI.Composition.CompositionCompositeMode CompositeMode
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member CompositionCompositeMode Visual.CompositeMode is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "CompositionCompositeMode Visual.CompositeMode");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.CompositionClip Clip
 		{
 			get
@@ -58,9 +175,22 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		// Skipping already declared property CenterPoint
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  global::System.Numerics.Vector3 CenterPoint
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member Vector3 Visual.CenterPoint is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Composition.Visual", "Vector3 Visual.CenterPoint");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.CompositionBorderMode BorderMode
 		{
 			get
@@ -73,8 +203,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.CompositionBackfaceVisibility BackfaceVisibility
 		{
 			get
@@ -87,8 +217,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector2 AnchorPoint
 		{
 			get
@@ -101,9 +231,18 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		// Skipping already declared property Parent
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if false || false || false || __WASM__ || false || false || false
+		[global::Uno.NotImplemented("__WASM__")]
+		public  global::Microsoft.UI.Composition.ContainerVisual Parent
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member ContainerVisual Visual.Parent is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector2 RelativeSizeAdjustment
 		{
 			get
@@ -116,8 +255,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::System.Numerics.Vector3 RelativeOffsetAdjustment
 		{
 			get
@@ -130,8 +269,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.Visual ParentForTransform
 		{
 			get
@@ -144,8 +283,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  bool IsHitTestVisible
 		{
 			get
@@ -158,8 +297,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  bool IsPixelSnappingEnabled
 		{
 			get
@@ -172,10 +311,17 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		// Forced skipping of method Microsoft.UI.Composition.Visual.AnchorPoint.get
+		// Forced skipping of method Microsoft.UI.Composition.Visual.RelativeSizeAdjustment.get
+		// Forced skipping of method Microsoft.UI.Composition.Visual.IsHitTestVisible.get
+		// Forced skipping of method Microsoft.UI.Composition.Visual.IsHitTestVisible.set
+		// Forced skipping of method Microsoft.UI.Composition.Visual.IsPixelSnappingEnabled.get
+		// Forced skipping of method Microsoft.UI.Composition.Visual.Opacity.get
+		// Forced skipping of method Microsoft.UI.Composition.Visual.IsPixelSnappingEnabled.set
+		// Forced skipping of method Microsoft.UI.Composition.Visual.RelativeSizeAdjustment.set
+		// Forced skipping of method Microsoft.UI.Composition.Visual.BackfaceVisibility.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.AnchorPoint.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.BackfaceVisibility.get
-		// Forced skipping of method Microsoft.UI.Composition.Visual.BackfaceVisibility.set
+		// Forced skipping of method Microsoft.UI.Composition.Visual.AnchorPoint.get
 		// Forced skipping of method Microsoft.UI.Composition.Visual.BorderMode.get
 		// Forced skipping of method Microsoft.UI.Composition.Visual.BorderMode.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.CenterPoint.get
@@ -188,8 +334,8 @@ namespace Microsoft.UI.Composition
 		// Forced skipping of method Microsoft.UI.Composition.Visual.IsVisible.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.Offset.get
 		// Forced skipping of method Microsoft.UI.Composition.Visual.Offset.set
-		// Forced skipping of method Microsoft.UI.Composition.Visual.Opacity.get
-		// Forced skipping of method Microsoft.UI.Composition.Visual.Opacity.set
+		// Forced skipping of method Microsoft.UI.Composition.Visual.RotationAxis.set
+		// Forced skipping of method Microsoft.UI.Composition.Visual.RelativeOffsetAdjustment.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.Orientation.get
 		// Forced skipping of method Microsoft.UI.Composition.Visual.Orientation.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.Parent.get
@@ -198,7 +344,7 @@ namespace Microsoft.UI.Composition
 		// Forced skipping of method Microsoft.UI.Composition.Visual.RotationAngleInDegrees.get
 		// Forced skipping of method Microsoft.UI.Composition.Visual.RotationAngleInDegrees.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.RotationAxis.get
-		// Forced skipping of method Microsoft.UI.Composition.Visual.RotationAxis.set
+		// Forced skipping of method Microsoft.UI.Composition.Visual.Opacity.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.Scale.get
 		// Forced skipping of method Microsoft.UI.Composition.Visual.Scale.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.Size.get
@@ -208,12 +354,5 @@ namespace Microsoft.UI.Composition
 		// Forced skipping of method Microsoft.UI.Composition.Visual.ParentForTransform.get
 		// Forced skipping of method Microsoft.UI.Composition.Visual.ParentForTransform.set
 		// Forced skipping of method Microsoft.UI.Composition.Visual.RelativeOffsetAdjustment.get
-		// Forced skipping of method Microsoft.UI.Composition.Visual.RelativeOffsetAdjustment.set
-		// Forced skipping of method Microsoft.UI.Composition.Visual.RelativeSizeAdjustment.get
-		// Forced skipping of method Microsoft.UI.Composition.Visual.RelativeSizeAdjustment.set
-		// Forced skipping of method Microsoft.UI.Composition.Visual.IsHitTestVisible.get
-		// Forced skipping of method Microsoft.UI.Composition.Visual.IsHitTestVisible.set
-		// Forced skipping of method Microsoft.UI.Composition.Visual.IsPixelSnappingEnabled.get
-		// Forced skipping of method Microsoft.UI.Composition.Visual.IsPixelSnappingEnabled.set
 	}
 }

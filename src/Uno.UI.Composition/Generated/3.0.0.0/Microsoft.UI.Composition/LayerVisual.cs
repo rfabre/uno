@@ -2,13 +2,13 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition
 {
-	#if false || false || false || false || false || false || false
-	[global::Uno.NotImplemented]
+	#if false || false || NET461 || __WASM__ || __SKIA__ || false || false
+	[global::Uno.NotImplemented("NET461", "__WASM__", "__SKIA__")]
 	#endif
 	public  partial class LayerVisual : global::Microsoft.UI.Composition.ContainerVisual
 	{
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.CompositionEffectBrush Effect
 		{
 			get
@@ -21,8 +21,8 @@ namespace Microsoft.UI.Composition
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || false || __NETSTD_REFERENCE__ || __MACOS__
+		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "__WASM__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Composition.CompositionShadow Shadow
 		{
 			get
@@ -36,8 +36,8 @@ namespace Microsoft.UI.Composition
 		}
 		#endif
 		// Forced skipping of method Microsoft.UI.Composition.LayerVisual.Effect.get
-		// Forced skipping of method Microsoft.UI.Composition.LayerVisual.Effect.set
 		// Forced skipping of method Microsoft.UI.Composition.LayerVisual.Shadow.get
+		// Forced skipping of method Microsoft.UI.Composition.LayerVisual.Effect.set
 		// Forced skipping of method Microsoft.UI.Composition.LayerVisual.Shadow.set
 	}
 }

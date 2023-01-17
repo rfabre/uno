@@ -5,84 +5,8 @@ namespace Microsoft.UI.Xaml.Controls
 	#if false || false || false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class PasswordBox : global::Microsoft.UI.Xaml.Controls.IInputValidationControl
+	public  partial class PasswordBox 
 	{
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Microsoft.UI.Xaml.Controls.InputValidationContext ValidationContext
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member InputValidationContext PasswordBox.ValidationContext is not implemented in Uno.");
-			}
-			set
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "InputValidationContext PasswordBox.ValidationContext");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Microsoft.UI.Xaml.Controls.InputValidationMode InputValidationMode
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Controls.InputValidationMode)this.GetValue(InputValidationModeProperty);
-			}
-			set
-			{
-				this.SetValue(InputValidationModeProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Microsoft.UI.Xaml.Controls.InputValidationKind InputValidationKind
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Controls.InputValidationKind)this.GetValue(InputValidationKindProperty);
-			}
-			set
-			{
-				this.SetValue(InputValidationKindProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Microsoft.UI.Xaml.DataTemplate ErrorTemplate
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.DataTemplate)this.GetValue(ErrorTemplateProperty);
-			}
-			set
-			{
-				this.SetValue(ErrorTemplateProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  bool HasValidationErrors
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member bool PasswordBox.HasValidationErrors is not implemented in Uno.");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  global::Windows.Foundation.Collections.IObservableVector<global::Microsoft.UI.Xaml.Controls.InputValidationError> ValidationErrors
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member IObservableVector<InputValidationError> PasswordBox.ValidationErrors is not implemented in Uno.");
-			}
-		}
-		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
 		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
 		public  global::Microsoft.UI.Xaml.TextReadingOrder TextReadingOrder
@@ -209,30 +133,6 @@ namespace Microsoft.UI.Xaml.Controls
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextReadingOrder)));
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public static global::Microsoft.UI.Xaml.DependencyProperty ErrorTemplateProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(ErrorTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
-			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationKindProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(InputValidationKind), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationKind), 
-			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationKind)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationModeProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(InputValidationMode), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationMode), 
-			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationMode)));
-		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.PasswordBox.PasswordBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.PasswordBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.Password.get
@@ -274,23 +174,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.PasswordChanging.remove
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.PasswordBox.SelectAll()
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.PasswordBox.PasteFromClipboard()
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationErrors.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.HasValidationErrors.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationContext.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationContext.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ErrorTemplate.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ErrorTemplate.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationMode.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationMode.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationKind.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationKind.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.HasValidationErrorsChanged.add
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.HasValidationErrorsChanged.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationError.add
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationError.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ErrorTemplateProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationModeProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationKindProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.PasswordProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.PasswordCharProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.IsPasswordRevealButtonEnabledProperty.get
@@ -355,38 +238,5 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.HasValidationErrorsChangedEventArgs> HasValidationErrorsChanged
-		{
-			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> PasswordBox.HasValidationErrorsChanged");
-			}
-			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> PasswordBox.HasValidationErrorsChanged");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __SKIA__ || __NETSTD_REFERENCE__ || __MACOS__
-		[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.InputValidationErrorEventArgs> ValidationError
-		{
-			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> PasswordBox.ValidationError");
-			}
-			[global::Uno.NotImplemented("__ANDROID__", "__IOS__", "NET461", "__WASM__", "__SKIA__", "__NETSTD_REFERENCE__", "__MACOS__")]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> PasswordBox.ValidationError");
-			}
-		}
-		#endif
-		// Processing: Microsoft.UI.Xaml.Controls.IInputValidationControl
 	}
 }

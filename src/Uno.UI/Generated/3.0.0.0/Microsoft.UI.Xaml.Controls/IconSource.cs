@@ -11,6 +11,9 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property ForegroundProperty
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.IconSource.Foreground.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.IconSource.Foreground.set
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.IconSource.CreateIconElement()
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.IconSource.CreateIconElementCore()
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.IconSource.GetIconElementPropertyCore(Microsoft.UI.Xaml.DependencyProperty)
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.IconSource.ForegroundProperty.get
 	}
 }

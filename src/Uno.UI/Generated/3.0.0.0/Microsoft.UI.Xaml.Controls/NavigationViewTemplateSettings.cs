@@ -11,14 +11,18 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property LeftPaneVisibility
 		// Skipping already declared property OverflowButtonVisibility
 		// Skipping already declared property PaneToggleButtonVisibility
+		// Skipping already declared property PaneToggleButtonWidth
 		// Skipping already declared property SingleSelectionFollowsFocus
+		// Skipping already declared property SmallerPaneToggleButtonWidth
 		// Skipping already declared property TopPadding
 		// Skipping already declared property TopPaneVisibility
 		// Skipping already declared property BackButtonVisibilityProperty
 		// Skipping already declared property LeftPaneVisibilityProperty
 		// Skipping already declared property OverflowButtonVisibilityProperty
 		// Skipping already declared property PaneToggleButtonVisibilityProperty
+		// Skipping already declared property PaneToggleButtonWidthProperty
 		// Skipping already declared property SingleSelectionFollowsFocusProperty
+		// Skipping already declared property SmallerPaneToggleButtonWidthProperty
 		// Skipping already declared property TopPaddingProperty
 		// Skipping already declared property TopPaneVisibilityProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.NavigationViewTemplateSettings()
@@ -30,6 +34,8 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.TopPaneVisibility.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.LeftPaneVisibility.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.SingleSelectionFollowsFocus.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.PaneToggleButtonWidth.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.SmallerPaneToggleButtonWidth.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.TopPaddingProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.OverflowButtonVisibilityProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.PaneToggleButtonVisibilityProperty.get
@@ -37,5 +43,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.TopPaneVisibilityProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.LeftPaneVisibilityProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.SingleSelectionFollowsFocusProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.PaneToggleButtonWidthProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings.SmallerPaneToggleButtonWidthProperty.get
 	}
 }
