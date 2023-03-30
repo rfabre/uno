@@ -130,8 +130,26 @@ namespace Windows.UI.Xaml
 				return;
 			}
 
-			// If we were unsetting the current highest precedence value, we need to find the next highest
-			if (valueIsUnsetValue && precedence == _highestPrecedence)
+			// Clear the animated value, when we are setting a local value to a property
+			// with an animated value from the filling part of an HoldEnd animation.
+			// note: There is no equivalent block in SetValueFast, as its condition would never be satisfied:
+			// _stack would've been materialized if the property had been animated.
+			bool isAnimationOverriddenByLocal = false;
+			if (!valueIsUnsetValue &&
+				precedence == DependencyPropertyValuePrecedences.Local &&
+				_highestPrecedence == DependencyPropertyValuePrecedences.Animations &&
+				IsAnimationValueFilling)
+			{
+				stackAlias[(int)DependencyPropertyValuePrecedences.Animations] = UnsetValue.Instance;
+				IsAnimationValueFilling = false;
+
+				isAnimationOverriddenByLocal = true;
+			}
+
+			// Update highest precedence, when the current highest value was unset or
+			// when animation value was overridden by local value.
+			if ((valueIsUnsetValue && precedence == _highestPrecedence) ||
+				isAnimationOverriddenByLocal)
 			{
 				// Start from current precedence and find next highest
 				for (int i = (int)precedence; i < (int)DependencyPropertyValuePrecedences.DefaultValue; i++)
@@ -325,6 +343,14 @@ namespace Windows.UI.Xaml
 		internal bool HasInherits
 			=> (_flags & Flags.Inherits) != 0;
 
+		internal bool IsAnimationValueFilling
+		{
+			get => (_flags & Flags.IsAnimationValueFilling) != 0;
+			set => _flags = (value
+				? _flags | Flags.IsAnimationValueFilling
+				: _flags & ~Flags.IsAnimationValueFilling);
+		}
+
 		private object?[] Stack
 		{
 			get
@@ -408,6 +434,11 @@ namespace Windows.UI.Xaml
 			/// Determines if the property inherits Value from its parent
 			/// </summary>
 			Inherits = 1 << 4,
+
+			/// <summary>
+			/// Determines if the property animation value is filling from a HoldEnd animation.
+			/// </summary>
+			IsAnimationValueFilling = 1 << 5,
 		}
 	}
 }

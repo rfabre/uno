@@ -241,7 +241,6 @@ namespace Windows.UI.Xaml
 			return GetStore(instance).GetValue(property, precedence, true);
 		}
 
-
 		internal static void PropagateInheritedProperties(this DependencyObject instance)
 		{
 			GetStore(instance).PropagateInheritedProperties();
@@ -335,6 +334,11 @@ namespace Windows.UI.Xaml
 		internal static void CoerceValue(this IDependencyObjectStoreProvider storeProvider, DependencyProperty property)
 		{
 			storeProvider.Store.CoerceValue(property);
+		}
+
+		internal static void SetIsAnimationValueFilling(this DependencyObject instance, DependencyProperty property, bool value)
+		{
+			GetStore(instance).SetIsAnimationValueFilling(property, value);
 		}
 
 		/// <summary>

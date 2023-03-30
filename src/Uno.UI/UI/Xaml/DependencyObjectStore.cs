@@ -520,6 +520,22 @@ namespace Windows.UI.Xaml
 			}
 		}
 
+		internal void SetIsAnimationValueFilling(DependencyProperty property, bool value, DependencyPropertyDetails? propertyDetails = null)
+		{
+			if (ActualInstance is { } actualInstanceAlias)
+			{
+				ValidatePropertyOwner(property);
+
+				propertyDetails ??= _properties.GetPropertyDetails(property);
+				propertyDetails.IsAnimationValueFilling = value;
+			}
+			else
+			{
+				// The store has lost its current instance, renove it from its parent.
+				Parent = null;
+			}
+		}
+
 		/// <summary>
 		/// Tries to apply the DataContext to the new and previous values when DataContext Value is inherited
 		/// </summary>

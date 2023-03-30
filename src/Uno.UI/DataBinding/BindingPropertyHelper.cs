@@ -26,6 +26,7 @@ namespace Uno.UI.DataBinding
 	internal delegate void ValueSetterHandler(object instance, object? value);
 	internal delegate void ValueUnsetterHandler(object instance);
 	internal delegate object? ValueGetterHandler(object instance);
+	internal delegate void IsAnimationValueFillingSetterHandler(object instance, bool value);
 
 	public static class BindableMetadata
 	{
@@ -49,11 +50,12 @@ namespace Uno.UI.DataBinding
 		//          those. If this situation changes, we could remove the associated code and 
 		//          revert to memoized Funcs.
 		//
-		private static Dictionary<CachedTuple<Type, String, DependencyPropertyValuePrecedences?, bool>, ValueGetterHandler> _getValueGetter = new Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences?, bool>, ValueGetterHandler>(CachedTuple<Type, String, DependencyPropertyValuePrecedences?, bool>.Comparer);
+		private static Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences?, bool>, ValueGetterHandler> _getValueGetter = new Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences?, bool>, ValueGetterHandler>(CachedTuple<Type, String, DependencyPropertyValuePrecedences?, bool>.Comparer);
 		private static Dictionary<CachedTuple<Type, string, bool, DependencyPropertyValuePrecedences>, ValueSetterHandler> _getValueSetter = new Dictionary<CachedTuple<Type, string, bool, DependencyPropertyValuePrecedences>, ValueSetterHandler>(CachedTuple<Type, string, bool, DependencyPropertyValuePrecedences>.Comparer);
 		private static Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences>, ValueGetterHandler> _getPrecedenceSpecificValueGetter = new Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences>, ValueGetterHandler>(CachedTuple<Type, string, DependencyPropertyValuePrecedences>.Comparer);
 		private static Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences>, ValueGetterHandler> _getSubstituteValueGetter = new Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences>, ValueGetterHandler>(CachedTuple<Type, string, DependencyPropertyValuePrecedences>.Comparer);
 		private static Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences>, ValueUnsetterHandler> _getValueUnsetter = new Dictionary<CachedTuple<Type, string, DependencyPropertyValuePrecedences>, ValueUnsetterHandler>(CachedTuple<Type, string, DependencyPropertyValuePrecedences>.Comparer);
+		private static Dictionary<CachedTuple<Type, string>, IsAnimationValueFillingSetterHandler> _getIsAnimationValueFilling = new(CachedTuple<Type, string>.Comparer);
 		private static Dictionary<CachedTuple<Type, string>, bool> _isEvent = new Dictionary<CachedTuple<Type, string>, bool>(CachedTuple<Type, string>.Comparer);
 		private static Dictionary<CachedTuple<Type, string, bool>, Type?> _getPropertyType = new Dictionary<CachedTuple<Type, string, bool>, Type?>(CachedTuple<Type, string, bool>.Comparer);
 		private static Type? _unoGetMemberBindingType;
@@ -227,6 +229,23 @@ namespace Uno.UI.DataBinding
 				if (!_getValueUnsetter.TryGetValue(key, out result))
 				{
 					_getValueUnsetter.Add(key, result = InternalGetValueUnsetter(type, property, precedence));
+				}
+			}
+
+			return result;
+		}
+
+		internal static IsAnimationValueFillingSetterHandler GetIsAnimationValueFillingSetter(Type type, string property)
+		{
+			var key = CachedTuple.Create(type, property);
+
+			IsAnimationValueFillingSetterHandler? result;
+
+			lock (_getIsAnimationValueFilling)
+			{
+				if (!_getIsAnimationValueFilling.TryGetValue(key, out result))
+				{
+					_getIsAnimationValueFilling.Add(key, result = InternalGetIsAnimationValueFillingSetter(type, property));
 				}
 			}
 
@@ -1132,7 +1151,7 @@ namespace Uno.UI.DataBinding
 		{
 			if (type == typeof(UnsetValue))
 			{
-				return _ => { };
+				return UnsetValueUnsetter;
 			}
 
 			property = SanitizePropertyName(type, property);
@@ -1149,6 +1168,24 @@ namespace Uno.UI.DataBinding
 			);
 
 			return delegate { once(); };
+		}
+
+		private static IsAnimationValueFillingSetterHandler InternalGetIsAnimationValueFillingSetter(Type type, string property)
+		{
+			if (type != typeof(UnsetValue))
+			{
+				property = SanitizePropertyName(type, property);
+
+				var dp =
+					FindDependencyProperty(type, property) ??
+					FindAttachedProperty(type, property);
+				if (dp != null)
+				{
+					return (instance, value) => DependencyObjectExtensions.SetIsAnimationValueFilling((DependencyObject)instance, dp, value);
+				}
+			}
+
+			return UnsetIsAnimationValueFillingSetter;
 		}
 
 		private static DependencyProperty FindDependencyProperty(Type ownerType, string property)
@@ -1249,6 +1286,10 @@ namespace Uno.UI.DataBinding
 			=> DependencyProperty.UnsetValue;
 
 		private static void UnsetValueSetter(object unused, object? unused2) { }
+
+		private static void UnsetValueUnsetter(object unused) { }
+
+		private static void UnsetIsAnimationValueFillingSetter(object unused, bool unused2) { }
 
 		/// <summary>
 		/// Determines if the type can be provided by the MetadataProvider

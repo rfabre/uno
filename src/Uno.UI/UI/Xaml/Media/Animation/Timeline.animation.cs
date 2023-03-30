@@ -1,4 +1,4 @@
-﻿using Uno.Extensions;
+using Uno.Extensions;
 using System;
 using System.Collections.Generic;
 using Uno.Disposables;
@@ -189,8 +189,8 @@ namespace Windows.UI.Xaml.Media.Animation
 				}
 
 				SetValue(ComputeToValue());//Set property to its final value
-
 				OnEnd();
+
 			}
 
 			public void Deactivate()
@@ -343,14 +343,8 @@ namespace Windows.UI.Xaml.Media.Animation
 				{
 #if __IOS__ || __MACOS__
 					// iOS && macOS: Here we make sure that the final frame is applied properly (it may have been skipped by animator)
-					// Note: The value is applied using the "Animations" precedence, which means that the user won't be able to alter
-					//		 it from application code. Instead we should set the value using a lower precedence
-					//		 (possibly "Local" with PropertyInfo.SetLocalValue(ComputeToValue())) but we must keep the
-					//		 original "Local" value, so will be able to rollback the animation when
-					//		 going to another VisualState (if the storyboard ran in that context).
-					//		 In that case we should also do "ClearValue();" to remove the "Animations" value, even if using "HoldEnd"
-					//		 cf. https://github.com/unoplatform/uno/issues/631
-					PropertyInfo.Value = ComputeToValue();
+					SetValue(ComputeToValue());
+					SetIsAnimationValueFilling(true);
 #endif
 
 					State = TimelineState.Filling;

@@ -240,6 +240,14 @@ namespace Uno.UI.DataBinding
 			}
 		}
 
+		internal void SetIsAnimationValueFilling(bool value)
+		{
+			if (!_disposed)
+			{
+				_value?.SetIsAnimationValueFilling(value);
+			}
+		}
+
 		public Type? ValueType => _value?.PropertyType;
 
 		internal object? DataItem => _value?.DataContext;
@@ -480,6 +488,7 @@ namespace Uno.UI.DataBinding
 			private ValueSetterHandler? _valueSetter;
 			private ValueSetterHandler? _localValueSetter;
 			private ValueUnsetterHandler? _valueUnsetter;
+			private IsAnimationValueFillingSetterHandler? _isAnimationValueFillingSetter;
 
 			private Type? _dataContextType;
 
@@ -824,6 +833,34 @@ namespace Uno.UI.DataBinding
 					if (this.Log().IsEnabled(Uno.Foundation.Logging.LogLevel.Debug))
 					{
 						this.Log().DebugFormat("Unsetting [{0}] failed because the DataContext is null for. It may have already been collected, or explicitly set to null.", PropertyName);
+					}
+				}
+			}
+
+			private void BuildIsAnimationValueFillingSetter()
+			{
+				if (_isAnimationValueFillingSetter == null && _dataContextType != null)
+				{
+					_isAnimationValueFillingSetter = BindingPropertyHelper.GetIsAnimationValueFillingSetter(_dataContextType, PropertyName);
+				}
+			}
+
+			public void SetIsAnimationValueFilling(bool value)
+			{
+				BuildIsAnimationValueFillingSetter();
+
+				// Capture the datacontext before the call to avoid a race condition with the GC.
+				var dataContext = DataContext;
+
+				if (dataContext != null)
+				{
+					_isAnimationValueFillingSetter!(dataContext, value);
+				}
+				else
+				{
+					if (this.Log().IsEnabled(Uno.Foundation.Logging.LogLevel.Debug))
+					{
+						this.Log().DebugFormat("Setting IsAnimationValueFilling for [{0}] failed because the DataContext is null. It may have already been collected, or explicitly set to null.", PropertyName);
 					}
 				}
 			}
