@@ -238,15 +238,15 @@ namespace Windows.UI.Core
 		}
 		#endif
 		#if false || false || NET461 || __WASM__ || false || __NETSTD_REFERENCE__ || false
-		[global::Uno.NotImplemented("__ANDROID__", "NET461", "__WASM__", "__NETSTD_REFERENCE__")]
+		[global::Uno.NotImplemented("NET461", "__WASM__", "__NETSTD_REFERENCE__")]
 		public  event global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Core.CoreWindow, global::Windows.UI.Core.KeyEventArgs> KeyDown
 		{
-			[global::Uno.NotImplemented("__ANDROID__", "NET461", "__WASM__", "__NETSTD_REFERENCE__")]
+			[global::Uno.NotImplemented("NET461", "__WASM__", "__NETSTD_REFERENCE__")]
 			add
 			{
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Windows.UI.Core.CoreWindow", "event TypedEventHandler<CoreWindow, KeyEventArgs> CoreWindow.KeyDown");
 			}
-			[global::Uno.NotImplemented("__ANDROID__", "NET461", "__WASM__", "__NETSTD_REFERENCE__")]
+			[global::Uno.NotImplemented("NET461", "__WASM__", "__NETSTD_REFERENCE__")]
 			remove
 			{
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Windows.UI.Core.CoreWindow", "event TypedEventHandler<CoreWindow, KeyEventArgs> CoreWindow.KeyDown");
@@ -254,15 +254,15 @@ namespace Windows.UI.Core
 		}
 		#endif
 		#if false || false || NET461 || __WASM__ || false || __NETSTD_REFERENCE__ || false
-		[global::Uno.NotImplemented("__ANDROID__", "NET461", "__WASM__", "__NETSTD_REFERENCE__")]
+		[global::Uno.NotImplemented("NET461", "__WASM__", "__NETSTD_REFERENCE__")]
 		public  event global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Core.CoreWindow, global::Windows.UI.Core.KeyEventArgs> KeyUp
 		{
-			[global::Uno.NotImplemented("__ANDROID__", "NET461", "__WASM__", "__NETSTD_REFERENCE__")]
+			[global::Uno.NotImplemented("NET461", "__WASM__", "__NETSTD_REFERENCE__")]
 			add
 			{
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Windows.UI.Core.CoreWindow", "event TypedEventHandler<CoreWindow, KeyEventArgs> CoreWindow.KeyUp");
 			}
-			[global::Uno.NotImplemented("__ANDROID__", "NET461", "__WASM__", "__NETSTD_REFERENCE__")]
+			[global::Uno.NotImplemented("NET461", "__WASM__", "__NETSTD_REFERENCE__")]
 			remove
 			{
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Windows.UI.Core.CoreWindow", "event TypedEventHandler<CoreWindow, KeyEventArgs> CoreWindow.KeyUp");
