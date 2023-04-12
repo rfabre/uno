@@ -28,13 +28,14 @@
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="Auto" />
 					<ColumnDefinition Width="Auto" />
+					<ColumnDefinition Width="Auto" />
 					<ColumnDefinition Width="*" />
 					<ColumnDefinition Width="Auto" />
 				</Grid.ColumnDefinitions>
 				<Button
 					x:Name="runButton"
 					Grid.Column="0"
-					not_skia:Content="▶ Run"
+					not_skia:Content="▶"
 					skia:Content="Run"
 					Click="OnRunTests"
 					Margin="0,0,4,0"/>
@@ -42,19 +43,26 @@
 					x:Name="stopButton"
 					Grid.Column="1"
 					IsEnabled="False"
-					not_skia:Content="⏹️ Stop"
+					not_skia:Content="⏹️"
 					skia:Content="Stop"
 					Click="OnStopTests"
 					Margin="0,0,4,0" />
+				<Button
+					x:Name="debugButton"
+					Grid.Column="2"
+					not_skia:Content="DVT"
+					skia:Content="DVT"
+					Click="DebugVT"
+					Margin="0,0,4,0" />
 				<TextBox
 					x:Name="testFilter"
-					Grid.Column="2"
+					Grid.Column="3"
 					PlaceholderText="Enter test filter here"
 					HorizontalAlignment="Stretch"
 					Margin="0,0,4,0"/>
 				<Button
 					Content="..."
-					Grid.Column="3">
+					Grid.Column="4" Visibility="Collapsed">
 					<Button.Flyout>
 						<Flyout>
 							<StackPanel>

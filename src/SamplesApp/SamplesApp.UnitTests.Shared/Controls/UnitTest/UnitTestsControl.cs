@@ -29,6 +29,10 @@ using Windows.UI.Xaml.Media;
 using Newtonsoft.Json;
 using System.Text;
 using System.Security.Cryptography;
+#if HAS_UNO
+using Uno.UI.Xaml;
+#endif
+using Uno.UI.Extensions;
 
 #if HAS_UNO
 using Uno.Foundation.Logging;
@@ -228,6 +232,18 @@ namespace Uno.UI.Samples.Tests
 		private void OnStopTests(object sender, RoutedEventArgs e)
 		{
 			StopRunningTests();
+		}
+
+		private void DebugVT(object sender, RoutedEventArgs e)
+		{
+#if HAS_UNO
+			var tree = Private.Infrastructure.TestServices.WindowHelper.WindowContent.TreeGraph();
+
+			if (Debugger.IsAttached)
+			{
+				Debugger.Break();
+			}
+#endif
 		}
 
 		private void StopRunningTests()
