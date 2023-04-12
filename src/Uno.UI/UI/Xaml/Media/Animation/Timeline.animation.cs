@@ -1,4 +1,4 @@
-using Uno.Extensions;
+﻿using Uno.Extensions;
 using System;
 using System.Collections.Generic;
 using Uno.Disposables;
@@ -71,7 +71,9 @@ namespace Windows.UI.Xaml.Media.Animation
 			private string[] GetTraceProperties() => _owner?.GetTraceProperties();
 			private void ClearValue() => _owner?.ClearValue();
 			private void SetValue(object value) => _owner?.SetValue(value);
+			private void SetAnimationFillingValue(object value) => _owner?.SetAnimationFillingValue(value);
 			private bool NeedsRepeat(Stopwatch activeDuration, int replayCount) => _owner?.NeedsRepeat(activeDuration, replayCount) ?? false;
+			private object GetValue() => _owner?.GetValue();
 			private object GetNonAnimatedValue() => _owner?.GetNonAnimatedValue();
 
 			public void Begin()
@@ -184,18 +186,19 @@ namespace Windows.UI.Xaml.Media.Animation
 			{
 				if (_animator is { IsRunning: true })
 				{
-					_animator.Cancel();//Stop the animator if it is running
+					_animator.Cancel(); // Stop the animator if it is running
 					_startingValue = null;
 				}
 
-				SetValue(ComputeToValue());//Set property to its final value
-				OnEnd();
+				// Set property to its final value
+				SetAnimationFillingValue(ComputeToValue());
 
+				OnEnd();
 			}
 
 			public void Deactivate()
 			{
-				_animator?.Cancel();//Stop the animator if it is running
+				_animator?.Cancel(); // Stop the animator if it is running
 				_startingValue = null;
 
 				State = TimelineState.Stopped;
@@ -339,17 +342,21 @@ namespace Windows.UI.Xaml.Media.Animation
 					return;
 				}
 
-				if (FillBehavior == FillBehavior.HoldEnd)//Two types of fill behaviors : HoldEnd - Keep displaying the last frame
+				// There are two types of fill behaviors:
+				if (FillBehavior == FillBehavior.HoldEnd) // HoldEnd: Keep displaying the last frame
 				{
 #if __IOS__ || __MACOS__
 					// iOS && macOS: Here we make sure that the final frame is applied properly (it may have been skipped by animator)
 					SetValue(ComputeToValue());
-					SetIsAnimationValueFilling(true);
 #endif
 
+					// The HoldEnd value can be overriden by setting a Local value while it is filling, but not while it is animating.
+					// Since in the dependency property, we doesnt have the context here as to wheter the "animation value" is animating or filling,
+					// we also need to set the AnimationFilling value to indicate the case.
+					SetAnimationFillingValue(ComputeToValue());
 					State = TimelineState.Filling;
 				}
-				else // Stop -Put back the initial state
+				else // Stop: Put back the initial state
 				{
 					State = TimelineState.Stopped;
 
@@ -425,8 +432,9 @@ namespace Windows.UI.Xaml.Media.Animation
 				}
 				else
 				{
-					var value = GetNonAnimatedValue();
-
+					var value = Uno.UI.FeatureConfiguration.Timeline.DefaultsStartingValueFromAnimatedValue
+						? GetValueCore()
+						: GetNonAnimatedValue();
 					if (value != null)
 					{
 						return AnimationOwner.Convert(value);
@@ -434,6 +442,25 @@ namespace Windows.UI.Xaml.Media.Animation
 				}
 
 				return null;
+			}
+
+			private object GetValueCore()
+			{
+#if !__ANDROID__
+				return GetValue();
+#else
+				// On android, animation may target a native property implementing the behavior instead of the specified dependency property.
+				// When starting a new animation midst another, in order to continue from the current animated value,
+				// we need to retrieve the value of that native property, as reading the dp value will just give the final value.
+				if (AnimatorFactory.TryGetNativeAnimatedValue(_owner, out var value))
+				{
+					return value;
+				}
+				else
+				{
+					return GetValue();
+				}
+#endif
 			}
 
 			/// <summary>

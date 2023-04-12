@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Uno.UI.RuntimeTests.Extensions;
 using Windows.UI;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
@@ -162,5 +164,133 @@ namespace Uno.UI.RuntimeTests.Tests.Windows_UI_Xaml_Media_Animation
 			Assert.AreEqual(10d, averageIncrement, 1.5, "an rough average of increment (exluding the drop) of 10 (+-15% error margin)");
 			Assert.IsTrue(incrementSizes.Count(x => x > 3) > 8, $"at least 10 (-2 error margin: might miss first and/or last) sets of continuous increments that size of 4 (+-1 error margin: sliding slot): {string.Join(",", incrementSizes)}");
 		}
+
+		public async Task When_StartingFrom_AnimatedValue()// value from completed(filling) animation
+		{
+			await Task.CompletedTask;
+		}
+
+		[TestMethod]
+		[RunsOnUIThread]
+		public async Task When_StartingFrom_AnimatingValue() // value from mid animation
+		{
+			var translate = new TranslateTransform();
+			var border = new Border()
+			{
+				Background = new SolidColorBrush(Colors.Pink),
+				Margin = new Thickness(0, 50, 0, 0),
+				Width = 50,
+				Height = 50,
+				RenderTransform = translate,
+			};
+			WindowHelper.WindowContent = border;
+			await WindowHelper.WaitForLoaded(border);
+			await WindowHelper.WaitForIdle();
+
+			translate.Y = 50;
+			await WindowHelper.WaitForIdle();
+			await Task.Delay(1000);
+			var threshold = GetTargetValue(); // snapshot the value
+
+			// Start an animation. Its animating value will serve as
+			// the inferred starting value for the next animation.
+			var animation0 = new DoubleAnimation
+			{
+				From = 100,
+				To = 105,
+				Duration = new Duration(TimeSpan.FromSeconds(5)),
+			}.BindTo(translate, nameof(translate.Y));
+			animation0.Wrap().Begin();
+			await Task.Delay(125);
+
+			// Start an second animation which should pick up from current animating value.
+			var animation1 = new DoubleAnimation
+			{
+				// From = should be around 100~105 from animation #0
+				To = 50,
+				Duration = new Duration(TimeSpan.FromSeconds(5)),
+			}.BindTo(translate, nameof(translate.Y));
+			animation1.Wrap().Begin();
+			await Task.Delay(125);
+
+			var value = GetTargetValue();
+			if (value is double y)
+			{
+				// Animation #1 should be animating from around[100~105] to 50, and not from 0 (unanimated Local value).
+				Assert.IsTrue(y > 50, $"Expecting Translate.Y to be still positive: {y}");
+			}
+			else
+			{
+				Assert.Fail($"Translate.Y is not a double: value={value}");
+			}
+
+			object GetTargetValue() =>
+#if !HAS_UNO
+				translate.GetValue(TranslateTransform.YProperty);
+#elif __ANDROID__
+#error fixme: de-scale the value
+				(double)translate.View.TranslationY;
+#else // uno, except android
+				translate.GetValue(TranslateTransform.YProperty, DependencyPropertyValuePrecedences.Animations);
+#endif
+		}
+
+		[TestMethod]
+		[RunsOnUIThread]
+		public Task When_OverridingFillingValue_WithLocalValue() =>
+			When_OverridingFillingValue_WithLocalValue_Impl(skipToFill: false);
+
+		[TestMethod]
+		[RunsOnUIThread]
+		public Task When_OverridingSkippedFillingValue_WithLocalValue() =>
+			When_OverridingFillingValue_WithLocalValue_Impl(skipToFill: true);
+
+		public async Task When_OverridingFillingValue_WithLocalValue_Impl(bool skipToFill)
+		{
+			var translate = new TranslateTransform();
+			var border = new Border()
+			{
+				Background = new SolidColorBrush(Colors.Pink),
+				Margin = new Thickness(0, 50, 0, 0),
+				Width = 50,
+				Height = 50,
+				RenderTransform = translate,
+			};
+			WindowHelper.WindowContent = border;
+			await WindowHelper.WaitForLoaded(border);
+			await WindowHelper.WaitForIdle();
+
+			// Animate the value to fill.
+			var animation0 = new DoubleAnimation
+			{
+				To = 100,
+				Duration = new Duration(TimeSpan.FromSeconds(1)),
+			}.BindTo(translate, nameof(translate.Y));
+			if (skipToFill)
+			{
+				animation0.Wrap().SkipToFill();
+			}
+			else
+			{
+				await animation0.Wrap().RunAsync();
+			}
+			var beforeValue = translate.Y;
+
+			// Set a new local value
+			translate.Y = 312.0;
+			var afterValue = translate.Y;
+
+			Assert.AreEqual(beforeValue, 100.0, "before: Should be animated to 100");
+			Assert.AreEqual(afterValue, 312.0, "after: Should be set to 312");
+		}
+
+		private static object GetTranslateYValue(TranslateTransform translate) =>
+#if !__ANDROID__
+			translate.GetValue(TranslateTransform.YProperty);
+#else
+#error fixme: de-scale the value
+#error fixme: do we need to read from dp in filling state?
+			(double)translate.View.TranslationY;
+#endif
 	}
 }

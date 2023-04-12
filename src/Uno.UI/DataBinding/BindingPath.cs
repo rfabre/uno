@@ -16,6 +16,7 @@ using Uno.Foundation.Logging;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Media;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Uno.UI.DataBinding
 {
@@ -226,6 +227,14 @@ namespace Uno.UI.DataBinding
 			}
 		}
 
+		internal void SetAnimationFillingValue(object value)
+		{
+			if (!_disposed)
+			{
+				_value?.SetAnimationFillingValue(value);
+			}
+		}
+
 		/// <summary>
 		/// Clears the value of the current precedence.
 		/// </summary>
@@ -237,14 +246,6 @@ namespace Uno.UI.DataBinding
 			if (!_disposed)
 			{
 				_value?.ClearValue();
-			}
-		}
-
-		internal void SetIsAnimationValueFilling(bool value)
-		{
-			if (!_disposed)
-			{
-				_value?.SetIsAnimationValueFilling(value);
 			}
 		}
 
@@ -487,8 +488,8 @@ namespace Uno.UI.DataBinding
 			private ValueGetterHandler? _substituteValueGetter;
 			private ValueSetterHandler? _valueSetter;
 			private ValueSetterHandler? _localValueSetter;
+			private ValueSetterHandler? _animationFillingValueSetter;
 			private ValueUnsetterHandler? _valueUnsetter;
-			private IsAnimationValueFillingSetterHandler? _isAnimationValueFillingSetter;
 
 			private Type? _dataContextType;
 
@@ -577,6 +578,12 @@ namespace Uno.UI.DataBinding
 			{
 				BuildLocalValueSetter();
 				SetSourceValue(_localValueSetter!, value);
+			}
+
+			public void SetAnimationFillingValue(object value)
+			{
+				BuildAnimationFillingValueSetter();
+				SetSourceValue(_animationFillingValueSetter!, value);
 			}
 
 			public Type? PropertyType
@@ -695,14 +702,15 @@ namespace Uno.UI.DataBinding
 			{
 				if (_valueSetter == null && _dataContextType != null)
 				{
+					_valueSetter = BindingPropertyHelper.GetValueSetter(
+						_dataContextType,
+						PropertyName,
+						convert: true,
+						precedence: _precedence ?? DependencyPropertyValuePrecedences.Local
+					);
 					if (_precedence == null)
 					{
-						BuildLocalValueSetter();
-						_valueSetter = _localValueSetter;
-					}
-					else
-					{
-						_valueSetter = BindingPropertyHelper.GetValueSetter(_dataContextType, PropertyName, convert: true, precedence: _precedence.Value);
+						_localValueSetter = _valueSetter;
 					}
 				}
 			}
@@ -711,7 +719,25 @@ namespace Uno.UI.DataBinding
 			{
 				if (_localValueSetter == null && _dataContextType != null)
 				{
-					_localValueSetter = BindingPropertyHelper.GetValueSetter(_dataContextType, PropertyName, convert: true);
+					_localValueSetter = BindingPropertyHelper.GetValueSetter(
+						_dataContextType,
+						PropertyName,
+						convert: true,
+						precedence: DependencyPropertyValuePrecedences.Local
+					);
+				}
+			}
+
+			private void BuildAnimationFillingValueSetter()
+			{
+				if (_animationFillingValueSetter == null && _dataContextType != null)
+				{
+					_animationFillingValueSetter = BindingPropertyHelper.GetValueSetter(
+						_dataContextType,
+						PropertyName,
+						convert: true,
+						precedence: DependencyPropertyValuePrecedences.FillingAnimations
+					);
 				}
 			}
 
@@ -833,34 +859,6 @@ namespace Uno.UI.DataBinding
 					if (this.Log().IsEnabled(Uno.Foundation.Logging.LogLevel.Debug))
 					{
 						this.Log().DebugFormat("Unsetting [{0}] failed because the DataContext is null for. It may have already been collected, or explicitly set to null.", PropertyName);
-					}
-				}
-			}
-
-			private void BuildIsAnimationValueFillingSetter()
-			{
-				if (_isAnimationValueFillingSetter == null && _dataContextType != null)
-				{
-					_isAnimationValueFillingSetter = BindingPropertyHelper.GetIsAnimationValueFillingSetter(_dataContextType, PropertyName);
-				}
-			}
-
-			public void SetIsAnimationValueFilling(bool value)
-			{
-				BuildIsAnimationValueFillingSetter();
-
-				// Capture the datacontext before the call to avoid a race condition with the GC.
-				var dataContext = DataContext;
-
-				if (dataContext != null)
-				{
-					_isAnimationValueFillingSetter!(dataContext, value);
-				}
-				else
-				{
-					if (this.Log().IsEnabled(Uno.Foundation.Logging.LogLevel.Debug))
-					{
-						this.Log().DebugFormat("Setting IsAnimationValueFilling for [{0}] failed because the DataContext is null. It may have already been collected, or explicitly set to null.", PropertyName);
 					}
 				}
 			}

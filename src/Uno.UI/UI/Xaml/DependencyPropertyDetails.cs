@@ -134,22 +134,24 @@ namespace Windows.UI.Xaml
 			// with an animated value from the filling part of an HoldEnd animation.
 			// note: There is no equivalent block in SetValueFast, as its condition would never be satisfied:
 			// _stack would've been materialized if the property had been animated.
-			bool isAnimationOverriddenByLocal = false;
+			bool forceUpdatePrecedence = false;
 			if (!valueIsUnsetValue &&
-				precedence == DependencyPropertyValuePrecedences.Local &&
-				_highestPrecedence == DependencyPropertyValuePrecedences.Animations &&
-				IsAnimationValueFilling)
+				_highestPrecedence == DependencyPropertyValuePrecedences.FillingAnimations &&
+				(precedence is DependencyPropertyValuePrecedences.Local or DependencyPropertyValuePrecedences.Animations))
 			{
-				stackAlias[(int)DependencyPropertyValuePrecedences.Animations] = UnsetValue.Instance;
-				IsAnimationValueFilling = false;
+				stackAlias[(int)DependencyPropertyValuePrecedences.FillingAnimations] = UnsetValue.Instance;
+				if (precedence is DependencyPropertyValuePrecedences.Local)
+				{
+					stackAlias[(int)DependencyPropertyValuePrecedences.Animations] = UnsetValue.Instance;
+				}
 
-				isAnimationOverriddenByLocal = true;
+				forceUpdatePrecedence = true;
 			}
 
 			// Update highest precedence, when the current highest value was unset or
 			// when animation value was overridden by local value.
 			if ((valueIsUnsetValue && precedence == _highestPrecedence) ||
-				isAnimationOverriddenByLocal)
+				forceUpdatePrecedence)
 			{
 				// Start from current precedence and find next highest
 				for (int i = (int)precedence; i < (int)DependencyPropertyValuePrecedences.DefaultValue; i++)
@@ -342,14 +344,6 @@ namespace Windows.UI.Xaml
 
 		internal bool HasInherits
 			=> (_flags & Flags.Inherits) != 0;
-
-		internal bool IsAnimationValueFilling
-		{
-			get => (_flags & Flags.IsAnimationValueFilling) != 0;
-			set => _flags = (value
-				? _flags | Flags.IsAnimationValueFilling
-				: _flags & ~Flags.IsAnimationValueFilling);
-		}
 
 		private object?[] Stack
 		{

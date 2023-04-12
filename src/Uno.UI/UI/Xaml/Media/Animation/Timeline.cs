@@ -277,11 +277,6 @@ namespace Windows.UI.Xaml.Media.Animation
 			return PropertyInfo.GetSubstituteValue();
 		}
 
-		internal void SetIsAnimationValueFilling(bool value)
-		{
-			PropertyInfo.SetIsAnimationValueFilling(value);
-		}
-
 		/// <summary>
 		/// Sets The value of the Target's Property
 		/// </summary>
@@ -300,6 +295,11 @@ namespace Windows.UI.Xaml.Media.Animation
 			}
 
 			PropertyInfo.Value = value;
+		}
+
+		internal void SetAnimationFillingValue(object value)
+		{
+			PropertyInfo.SetAnimationFillingValue(value);
 		}
 
 		/// <summary>

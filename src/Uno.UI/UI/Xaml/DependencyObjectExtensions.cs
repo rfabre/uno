@@ -336,11 +336,6 @@ namespace Windows.UI.Xaml
 			storeProvider.Store.CoerceValue(property);
 		}
 
-		internal static void SetIsAnimationValueFilling(this DependencyObject instance, DependencyProperty property, bool value)
-		{
-			GetStore(instance).SetIsAnimationValueFilling(property, value);
-		}
-
 		/// <summary>
 		/// Register for changes dependency property changes notifications.
 		/// </summary>
