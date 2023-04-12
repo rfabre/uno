@@ -112,21 +112,23 @@ namespace Windows.UI.Xaml
 
 			try
 			{
-				if (FocusManager.GetFocusedElement() is FrameworkElement element)
+				if (FocusManager.GetFocusedElement() is not FrameworkElement element)
 				{
-					var routedArgs = new KeyRoutedEventArgs(this, virtualKey)
-					{
-						CanBubbleNatively = false,
-					};
-
-					RoutedEvent routedEvent = e.Action == KeyEventActions.Down ?
-						UIElement.KeyDownEvent :
-						UIElement.KeyUpEvent;
-
-					element?.RaiseEvent(routedEvent, routedArgs);
-
-					handled = routedArgs.Handled;
+					element = WinUICoreServices.Instance.MainRootVisual;
 				}
+
+				var routedArgs = new KeyRoutedEventArgs(this, virtualKey)
+				{
+					CanBubbleNatively = false,
+				};
+
+				RoutedEvent routedEvent = e.Action == KeyEventActions.Down ?
+					UIElement.KeyDownEvent :
+					UIElement.KeyUpEvent;
+
+				element?.RaiseEvent(routedEvent, routedArgs);
+
+				handled = routedArgs.Handled;
 
 				if (CoreWindow.GetForCurrentThread() is ICoreWindowEvents ownerEvents)
 				{
@@ -150,6 +152,8 @@ namespace Windows.UI.Xaml
 					{
 						ownerEvents.RaiseKeyUp(coreWindowArgs);
 					}
+
+					handled = coreWindowArgs.Handled;
 				}
 			}
 			catch (Exception ex)
