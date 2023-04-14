@@ -669,6 +669,12 @@ namespace Windows.UI.Xaml.Controls
 
 		private void OnContentTemplateSelectorChanged(DataTemplateSelector dataTemplateSelector1, DataTemplateSelector dataTemplateSelector2)
 		{
+			if (ContentTemplateRoot != null)
+			{
+				ContentTemplateRoot = null;
+			}
+
+			SetUpdateTemplate();
 		}
 
 		partial void UnregisterContentTemplateRoot();
