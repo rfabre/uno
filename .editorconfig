@@ -396,6 +396,9 @@ dotnet_diagnostic.CA1308.severity = none
 # CA1309: Use ordinal StringComparison
 dotnet_diagnostic.CA1309.severity = none
 
+# CA1850: Prefer static `HashData` method over `ComputeHash`
+dotnet_diagnostic.CA1850.severity = none
+
 # CA1851: Possible multiple enumerations of 'IEnumerable' collection
 # TODO: This one may be useful to enable.
 dotnet_diagnostic.CA1851.severity = none
