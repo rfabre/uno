@@ -403,6 +403,9 @@ dotnet_diagnostic.CA1851.severity = none
 # CA1852: Seal internal types
 dotnet_diagnostic.CA1852.severity = none
 
+# CA1854: Prefer the IDictionary.TryGetValue(TKey, out TValue) method
+dotnet_diagnostic.CA1854.severity = none
+
 # CA2101: Specify marshalling for P/Invoke string arguments
 dotnet_diagnostic.CA2101.severity = none
 
