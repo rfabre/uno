@@ -32,10 +32,10 @@ generated_code = true
 [CyclomaticComplexityWalker.cs]
 generated_code = true
 
-[**/Java.Interop.__TypeRegistrations.cs]
+[Java.Interop.__TypeRegistrations.cs]
 generated_code = true
 
-[**/Uno.UI.UnoRecyclerView.cs]
+[Uno.UI.UnoRecyclerView.cs]
 generated_code = true
 
 [*.cs]
