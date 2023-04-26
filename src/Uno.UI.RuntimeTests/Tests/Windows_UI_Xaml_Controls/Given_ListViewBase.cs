@@ -3046,8 +3046,8 @@ namespace Uno.UI.RuntimeTests.Tests.Windows_UI_Xaml_Controls
 		protected override DataTemplate SelectTemplateCore(object item)
 		{
 			if (
-#if __IOS__
-				// On iOS, the template selector may be invoked with a null item. This is arguably also a bug, but not presently under test here.
+#if __IOS__ || __SKIA__ || __WASM__
+				// On iOS/wasm/skia, the template selector may be invoked with a null item. This is arguably also a bug, but not presently under test here.
 				item != null &&
 #endif
 					!_itemsSource.Contains(item)
