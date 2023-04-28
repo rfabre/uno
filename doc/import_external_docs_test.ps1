@@ -11,7 +11,7 @@ $external_docs =
     @("https://github.com/unoplatform/figma-docs", "figma-docs", "main"),
     @("https://github.com/unoplatform/uno.resizetizer", "uno.resizetizer", "main"),
     @("https://github.com/unoplatform/uno.uitest", "uno.uitest", "master"),
-    @("https://github.com/unoplatform/uno.extensions", "uno.extensions", "main")
+    @("https://github.com/unoplatform/uno.extensions", "uno.extensions", "dev/shimmy/mvux-docs-advanced")
 )
 
 $ErrorActionPreference = 'Stop'
