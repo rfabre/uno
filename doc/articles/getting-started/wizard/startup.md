@@ -33,7 +33,8 @@ This is introductory page to the wizard and lets you choose between the blank or
 
     #### Configuration
 
-    Uno.Extensions.Configuration enables configuration of an app. This includes loading and storing app configuration using various methods.
+    This extension provides a way to load application configuration data from and to various sources using the [Options Pattern](https://learn.microsoft.com/en-us/dotnet/core/extensions/options).
+    Refer to the [Uno Configuration](xref:Overview.Configuration) documentation for more information.
 
     #### App Hosting
 
@@ -41,19 +42,21 @@ This is introductory page to the wizard and lets you choose between the blank or
 
     #### Dependency Injection
 
-    Dependency Injection (DI) is an Inversion of Control (IoC) technique which enables consuming classes not to worry about the management or creation of their dependencies, and instead rely on a central service to provide it when needed, based how the provider was configured.  
-    Uno Platform enables DI via its Uno.Extensions.DependencyInjection library, which you can learn more about [here](xref:Overview.DependencyInjection).
+    Dependency Injection (DI) is an Inversion of Control (IoC) technique which enables consuming classes not to worry about the management or creation of their dependencies, and instead rely on a central service to provide it when needed, based how the provider was configured.      
+    Uno Platform brings the power of [Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) to all OSs Uno Platform targets, and adds its additional functionality via its Uno.Extensions.DependencyInjection library, which you can learn more about [here](xref:Overview.DependencyInjection).
 
     #### Logging
 
     Logging is a crucial component in an app that enables the developer to emit log messages whenever an important action or execution is taken by the app. This then lets you trace back any errors or issues that may arise in the future.
     There are several Logging tools out there, with one of the most common of them being [Microosft.Extensions.Logging](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging).  
-    Uno Platform provides its Uno.Extensions.Logging to bring Logging to all platforms it supports.      
+    Uno Platform provides its Uno.Extensions.Logging to bring Logging to all platforms it supports.  
+    The default template generates an app configured to write debug-level logging information to the Console, and set-up using Congiguration, Hosting, and DI.  
     Uno.Extensions.Logging is covered in more detail [here](xref:Overview.Logging).
 
     #### Navigation
 
     Navigation is an integral part of any app and for that, Uno Platform has developed a navigation system that is registered and served using DI and is fully integrated with the navigation specific UI controls out-there, such as `Frame`, `NavigationView`, and `TabBar`.  
+    It is a region-based navigation. A Region is the abstraction of the view responsible for handling navigation. Regions are structured into a logical hierarchical representation that shadows the navigation-aware controls in the visual hierarchy. The hierarchy allows navigation requests to be propagated up to parent and down to child regions as required.  
     This library is also responsible for showing pop-ups, flyouts, dialogs, and other interactions with the user.  
     Learn more about Uno's Navigation library [here](xref:Overview.Navigation).
 
@@ -69,7 +72,7 @@ This is introductory page to the wizard and lets you choose between the blank or
 
     The Localization extension is responsible for managing globalization of your app.  
     This enables keeping all translations of your app in a single place and enables the user to easily switch the UI language.  
-    Uno.Extensions.Localization expands Microsoft.Extensions.Localization to all targeted platforms.  
+    Uno.Extensions.Localization expands [Microsoft.Extensions.Localization](https://learn.microsoft.com/en-us/dotnet/core/extensions/localization) to all OSs supported by Uno Platform.  
     Read the full Localization documentation [here](xref:Overview.Localization).
 
     #### Serialization
@@ -90,7 +93,7 @@ This is introductory page to the wizard and lets you choose between the blank or
 
     #### Uno Toolkit
 
-    The Uno Toolkit provides a set of controls and UI utils.  
+    The [Uno Toolkit](https://platform.uno/uno-toolkit) provides a set of controls and UI utils.  
     It enables you to easily switch themes (Fluent, Material, Cupertino), provides many UI controls and components, UI graphics utilities, and access to device sensors and other features.  
     The Uno Toolkit is demonstrated as live web app [here](https://gallery.platform.uno/). It is also available as an [iOS](https://apps.apple.com/us/app/uno-gallery/id1380984680) or [Android](https://play.google.com/store/apps/details?id=com.nventive.uno.ui.demo) app.
 

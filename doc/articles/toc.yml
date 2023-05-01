@@ -437,11 +437,11 @@
             - name: Uno.UITest
               href: external/uno.uitest/doc/toc.yml
 
-#    - name: Reference
-#      items:
-#        - name: Implemented Views
-#          href: implemented/toc.yml
-#          topicHref: implemented-views.md
+    - name: Reference
+      items:
+        - name: Implemented Views
+          href: implemented/toc.yml
+          topicHref: implemented-views.md
 
     - name: Contributing to Uno Platform
       items:

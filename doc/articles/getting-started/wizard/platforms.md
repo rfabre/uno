@@ -1,7 +1,5 @@
 This setting lets you choose which platforms the generated app will target.
     
-![](assets/wizard-platforms.jpg)
-    
 Uno Platform currently supports targeting the following operating systems:
     
 - Mobile
@@ -15,3 +13,5 @@ Uno Platform currently supports targeting the following operating systems:
   - GTK
   - WPF
   - Linux Framebuffer
+
+![](assets/wizard-platforms.jpg)
