@@ -5,5 +5,4 @@ Uses traditional WinUI XAML markup.
 
 - **C# Markup**  
 Uses the new C# Markup.  
-C# Markup is a new way of defining the UI tree in C# rather than XAML.  
-Learn more about C# Markup [here]().
+C# Markup is a new way of defining the UI tree in C# rather than XAML.
