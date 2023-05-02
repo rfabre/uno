@@ -1,3 +1,7 @@
+---
+uid: Uno.GettingStarted.UsingWizard.Themes
+---
+
 Uno platform lets you decide easily which theme or skin to display throughout your app.
 
 This option sets the generated theme or skin to be used in the generated app. The options available are:

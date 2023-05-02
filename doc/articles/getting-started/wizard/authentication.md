@@ -1,3 +1,7 @@
+---
+uid: Uno.GettingStarted.UsingWizard.Authentication
+---
+
 - **None**  
     Excludes authentication features from the generated projects.
 

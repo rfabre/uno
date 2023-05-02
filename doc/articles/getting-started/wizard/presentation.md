@@ -1,3 +1,7 @@
+---
+uid: Uno.GettingStarted.UsingWizard.Presentation
+---
+
 This setting allows you to choose between MVVM and and MVUX.
     
 - **MVUX**  

@@ -1,3 +1,7 @@
+---
+uid: Uno.GettingStarted.UsingWizard.Startup
+---
+
 The main page of the wizard shows and the default template is selected.
 
 ![](assets/wizard-intro.jpg)
@@ -80,8 +84,7 @@ This is introductory page to the wizard and lets you choose between the blank or
     The default settings comes with the following pre-set languages: English (*en*), Spanish (*es*), French (*fr*), and Potuguese - Brazil (*pt-BR*).
 
     Uno.Extensions.Localization expands [Microsoft.Extensions.Localization](https://learn.microsoft.com/en-us/dotnet/core/extensions/localization) to all OSs supported by Uno Platform.  
-    Read the full Localization documentation [here](xref:Overview.Localization) or learn more about [Globalization](https://learn.microsoft.com/en-us/dotnet/core/extensions/globalization).
-
+    Read the full Localization documentation [here](xref:Overview.Localization) or learn more about [Globalization](https://learn.microsoft.com/en-us/dotnet/core/extensions/globalization).    
 
     #### Serialization
 

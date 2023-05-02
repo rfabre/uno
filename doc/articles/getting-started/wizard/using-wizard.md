@@ -39,44 +39,44 @@ Clicking *Cancel* returns to the [main page](#selecting-startup-type).
 
 1. ### Framework
 
-    [!INCLUDE [Framework](frameword.md)]
+    [!INCLUDE [Framework](xref:Uno.GettingStarted.UsingWizard.Framework)]
 
 1. ### Platforms
 
-    [!INCLUDE [Platforms](platforms.md)]
+    [!INCLUDE [Platforms](xref:Uno.GettingStarted.UsingWizard.Platforms)]
 
 1. ### Presentation
 
-    [!INCLUDE [Presentation](presentation.md)]    
+    [!INCLUDE [Presentation](xref:Uno.GettingStarted.UsingWizard.Presentation)]    
 
 1. ### Markup
 
-    [!INCLUDE [Markup](markup.md)]
+    [!INCLUDE [Markup](xref:Uno.GettingStarted.UsingWizard.Markup)]
 
 1. ### Themes
 
-    [!INCLUDE [Themes](themes.md)]
+    [!INCLUDE [Themes](xref:Uno.GettingStarted.UsingWizard.Themes)]
 
 1. ### Extensions
 
-    [!INCLUDE [Extensions](extensions.md)]
+    [!INCLUDE [Extensions](xref:Uno.GettingStarted.UsingWizard.Extensions)]
 
 1. ### Projects
 
-    [!INCLUDE [Projects](projects.md)]
+    [!INCLUDE [Projects](xref:Uno.GettingStarted.UsingWizard.Projects)]
 
 1. ### Features
 
-    [!INCLUDE [Features](features.md)]
+    [!INCLUDE [Features](xref:Uno.GettingStarted.UsingWizard.Features)]
 
 1. ### Authentication
 
-    [!INCLUDE [Authentication](authentication.md)]
+    [!INCLUDE [Authentication](xref:Uno.GettingStarted.UsingWizard.Authentication)]
 
 1. ### Application
 
-    [!INCLUDE [Application](application.md)]
+    [!INCLUDE [Application](xref:Uno.GettingStarted.UsingWizard.Application)]
 
 1. ### Testing
 
-    [!INCLUDE [Testing](testing.md)]
+    [!INCLUDE [Testing](xref:Uno.GettingStarted.UsingWizard.Testing)]

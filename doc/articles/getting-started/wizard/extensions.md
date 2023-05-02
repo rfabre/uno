@@ -1,3 +1,7 @@
+---
+uid: Uno.GettingStarted.UsingWizard.Extensions
+---
+
 Enables setting which Uno Extensions should be included with the generated projects.
 Uno Extensions is a set of Extensions that cover common essentials application core building blocks, and are supported on all operating systems Uno Platform targets.  
 The Uno.Extensions follows the Microsoft.Extensions model that creates a host environment where you can register additional dependencies. The registered dependencies are then available throughout the application via the Services (`IServiceProvider`) property on the `IHost` instance.
