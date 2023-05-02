@@ -40,7 +40,7 @@ Clicking *Cancel* returns to the [main page](#selecting-startup-type).
 
 1. ### Framework
 
-    [!INCLUDE [Framework](frameword.md)]
+    [!INCLUDE [Framework](framework.md)]
 
 1. ### Platforms
 
