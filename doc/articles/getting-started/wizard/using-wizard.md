@@ -35,7 +35,6 @@ Clicking *Cancel* returns to the [main page](#selecting-startup-type).
 1. [Application](#application)
 1. [Testing](#testing)
 
-
 <!-- do not delete this line - it ends previous list -->
 
 1. ### Framework
