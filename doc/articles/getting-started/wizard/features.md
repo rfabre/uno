@@ -12,6 +12,6 @@ uid: Uno.GettingStarted.UsingWizard.Features
     > As this is a WASM feature it will be disabled if WASM is not selected as one of the output target platforms.
 
 - **Visual Studio Code debugging**  
-    Enables debugging the Web-Assembly and Skia heads in Visual Studio Code.
+    Enables Uno Platform debugging in Visual Studio Code.
 
 ![](assets/features.jpg)
