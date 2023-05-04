@@ -4,7 +4,7 @@ uid: Uno.GettingStarted.UsingWizard.Startup
 
 The main page of the wizard shows and the default template is selected.
 
-![](assets/wizard-intro.jpg)
+![](assets/intro.jpg)
 
 This is introductory page to the wizard and lets you choose between the blank or default template, and also enables you to customize that selection even further if you click *Customize*.
 

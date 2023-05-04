@@ -18,4 +18,4 @@ Uno Platform currently supports targeting the following operating systems:
   - WPF
   - Linux Framebuffer
 
-![](assets/wizard-platforms.jpg)
+![](assets/platforms.jpg)
