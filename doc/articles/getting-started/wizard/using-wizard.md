@@ -26,7 +26,6 @@ Clicking *Cancel* returns to the [main page](#selecting-startup-type).
 1. [Framework](#framework)
 1. [Platforms](#platforms)
 1. [Presentation](#presentation)
-1. [Markup](#markup)
 1. [Themes](#themes)
 1. [Extensions](#extensions)
 1. [Projects](#projects)
@@ -48,10 +47,6 @@ Clicking *Cancel* returns to the [main page](#selecting-startup-type).
 1. ### Presentation
 
     [!INCLUDE [Presentation](presentation.md)]    
-
-1. ### Markup
-
-    [!INCLUDE [Markup](markup.md)]
 
 1. ### Themes
 
