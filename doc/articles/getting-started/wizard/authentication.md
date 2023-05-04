@@ -20,6 +20,7 @@ uid: Uno.GettingStarted.UsingWizard.Authentication
     Read the [Authentication documentation](xref:Overview.Authentication) to get more knowledge about Uno Platform's authentication support and tools it provides.
 
     > [!NOTE]    
-    > The Authentication options is only available in the Default template, and not in the Blank one. You can always click *Cancel* to return to the first page.
+    > The Authentication options is selected by default in the Default template, and not in the Blank one.
+    > This option is dependent on the [DependencyInjection](#extensions) option and is only shown if the latter is enabled.
 
 ![](assets/authentication.jpg)
