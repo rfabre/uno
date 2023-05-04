@@ -15,6 +15,9 @@ The available extensions are:
     Dependency Injection (DI) is an Inversion of Control (IoC) technique which enables consuming classes not to worry about the management or creation of their dependencies, and instead rely on a central service to provide it when needed, based how the provider was configured.      
     Uno Platform brings the power of [Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) to all OSs Uno Platform targets, and adds its additional functionality via its Uno.Extensions.DependencyInjection library, which you can learn more about [here](xref:Overview.DependencyInjection).
 
+    > [!NOTE]
+    > Some other features (e.g. Configuration, Http, Authentication as well as others) depend on DI and will be disabled if DI is not enabled.
+
   - **Configuration**  
     This extension provides a way to load application configuration data from and to various sources using the [Options Pattern](https://learn.microsoft.com/en-us/dotnet/core/extensions/options).
     Refer to the [Uno Configuration](xref:Overview.Configuration) documentation for more information.
@@ -23,7 +26,7 @@ The available extensions are:
     Uno.Extensions.Http allows for the registration of API endpoints as multiple typed HttpClient instances. In this centralized location for accessing web resources, the lifecycle of the corresponding HttpMessageHandler objects is managed. Added clients can optionally be configured to use the platform-native handler. Additional functionality is provided to clear cookies or log diagnostic messages in responses. This library uses Microsoft.Extensions.Http for any HTTP related work.
     For more documentation on HTTP requests, [read the documentation](xref:Overview.Http).
 
-    Another related package installed with the default template is Refit. This is a port of the [Refit library](https://github.com/reactiveui/refit) that enables mapping REST APIs into .NET interfaces.
+    Another related package installed when the Http option is selected is Refit. This is a port of the [Refit library](https://github.com/reactiveui/refit) that enables mapping REST APIs into .NET interfaces.
     Refer to the [documentation](xref:Overview.Http#refit) to learn how to use it in an Uno Platform app.
 
   - **Localization**

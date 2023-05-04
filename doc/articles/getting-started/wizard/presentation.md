@@ -4,6 +4,9 @@ uid: Uno.GettingStarted.UsingWizard.Presentation
 
 This setting allows you to choose between MVVM and and MVUX.
     
+- **MVVM**  
+    Generates a project optimized for use with the traditional MVVM architecture, using Microsoft's [MVVM Community Toolkit](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm).
+
 - **MVUX**  
     The MVUX pattern is a new programming architecture by Uno Platform. It stands for ***M**odel **V**iew **U**pdate e**X**tended*.
     It's main feature is enabling the use of immutable [POCO](https://en.wikipedia.org/wiki/Plain_old_CLR_object) entities and Models (using [records](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/records)) as the presentation layer, making the whole need for implementing property change notification redundant.
@@ -13,8 +16,5 @@ This setting allows you to choose between MVVM and and MVUX.
     The code-generation engine also makes it easier to write commands to be consumed by the View, see [Commands](xref:Overview.Mvux.Advanced.Commands).
 
     To learn more about the MVUX pattern, read [this](xref:Overview.Mvux.Overview).
-    
-- **MVVM**  
-    Generates a project optimized for use with the traditional MVVM architecture, using Microsoft's [MVVM Community Toolkit](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm).
 
 ![](assets/presentation.jpg)
