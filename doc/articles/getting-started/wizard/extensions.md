@@ -10,7 +10,7 @@ To learn more about Uno Extensions, visit [this page](xref:Overview.Features).
     
 The available extensions are:
     
-- **General**
+- **General**  
   - **Dependency Injection**  
     Dependency Injection (DI) is an Inversion of Control (IoC) technique that enables consuming classes not to worry about the management or creation of their dependencies and instead rely on a central service to provide it when needed, based on how the provider was configured.  
     Uno Platform brings the power of [Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) to all OSs Uno Platform targets and adds its additional functionality via its Uno.Extensions.DependencyInjection library, which you can learn more about [here](xref:Overview.DependencyInjection).
@@ -22,14 +22,14 @@ The available extensions are:
     This extension provides a way to load application configuration data from and to various sources using the [Options Pattern](https://learn.microsoft.com/en-us/dotnet/core/extensions/options).
     Refer to the [Uno Configuration](xref:Overview.Configuration) documentation for more information.
 
-  - **HTTP**
+  - **HTTP**  
     Uno.Extensions.Http allows for the registration of API endpoints as multiple typed HttpClient instances. In this centralized location for accessing web resources, the lifecycle of the corresponding HttpMessageHandler objects is managed. Added clients can optionally be configured to use the platform-native handler. Additional functionality is provided to clear cookies or log diagnostic messages in responses. This library uses Microsoft.Extensions.Http for any HTTP related work.
     For more documentation on HTTP requests, [read the documentation](xref:Overview.Http).
 
     Another related package installed when the Http option is selected is Refit. This is a port of the [Refit library](https://github.com/reactiveui/refit) that enables mapping REST APIs into .NET interfaces.
     Refer to the [documentation](xref:Overview.Http#refit) to learn how to use it in an Uno Platform app.
 
-  - **Localization**
+  - **Localization**  
     The Localization extension is responsible for managing globalization in your app.  
     This enables keeping all translations of your app in a single place and enables the user to easily switch the UI language.
 
@@ -42,8 +42,8 @@ The available extensions are:
     Uno.Extensions.Localization expands [Microsoft.Extensions.Localization](https://learn.microsoft.com/en-us/dotnet/core/extensions/localization) to all OSs supported by Uno Platform.  
     Read the full Localization documentation [here](xref:Overview.Localization) or learn more about [Globalization](https://learn.microsoft.com/en-us/dotnet/core/extensions/globalization).
 
-- **Navigation**
-  - **Regions**
+- **Navigation**  
+  - **Regions**  
     Navigation is an integral part of any app and for that, Uno Platform has developed a navigation system that is registered and served using DI and is fully integrated with the navigation-specific UI controls out there, such as `Frame`, `NavigationView`, and `TabBar`.  
     It is a region-based navigation. A Region is the abstraction of the view responsible for handling navigation. Regions are structured into a logical hierarchical representation that shadows the navigation-aware controls in the visual hierarchy. The hierarchy allows navigation requests to be propagated up to the parent and down to child regions as required.  
     This library is also responsible for showing pop-ups, flyouts, dialogs, and other interactions with the user.  

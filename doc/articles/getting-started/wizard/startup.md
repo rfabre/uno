@@ -48,7 +48,7 @@ This is an introductory page to the wizard and lets you choose between the blank
         The default template generates an app configured to write debug-level logging information to the Console, and set-up using Configuration, Hosting, and DI.  
         Uno.Extensions.Logging is covered in more detail [here](xref:Overview.Logging).
 
-    - Navigation
+    - Navigation  
         Uno.Extensions.Navigation provides powerful navigation tools for your app.  
         The default template uses Uno's region navigation.  
         Learn more about Uno's Navigation library [here](xref:Overview.Navigation).
