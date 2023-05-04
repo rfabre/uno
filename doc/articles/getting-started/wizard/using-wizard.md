@@ -6,7 +6,7 @@ uid: Uno.GettingStarted.UsingWizard
 
 ## Getting started
 
-The [Uno Platform Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=unoplatform.uno-platform-addin-2022), provides project templates for the open source Uno Platform with which you can create single-source code, cross-platform solution and choose from the platforms to target: iOS, Android, WebAssembly, macOS, mac Catalyst, Windows and Linux.
+The [Uno Platform Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=unoplatform.uno-platform-addin-2022), provides project templates for the open-source Uno Platform with which you can create single-source code, cross-platform solution and choose from the platforms to target: iOS, Android, WebAssembly, macOS, mac Catalyst, Windows and Linux.
 
 After having installed the required workloads and the extension (use [Uno-Check](xref:UnoCheck.UsingUnoCheck) to verify that your environment is Uno Platform ready), search and click the Uno Platform App in your new project to open the wizard.
 
@@ -20,7 +20,7 @@ When prompted, configure the project and solution name and select the location t
 
 ## Project configuration wizard
 
-Throughout the wizard you can configure the following options, but you can click *Create* at any time to complete the project generation.  
+Throughout the wizard, you can configure the following options, but you can click *Create* at any time to complete the project generation.  
 Clicking *Cancel* returns to the [main page](#selecting-startup-type).
 
 1. [Framework](#framework)

@@ -17,10 +17,10 @@ uid: Uno.GettingStarted.UsingWizard.Authentication
     1. **OIDC**: also referred to as [OpenID Connect](https://openid.net/connect), is a simple identity layer using the OAuth 2.0 protocol.
     1. **Web**: Web authentication is achieved via a web-page that the app sends over to be opened in the browser and gets a token result once the login process is completed successfully.
 
-    Read the [Authentication documentation](xref:Overview.Authentication) to get more knowledge about Uno Platform's authentication support and tools it provides.
+    Read the [Authentication documentation](xref:Overview.Authentication) to get more knowledge about Uno Platform's authentication support and the tools it provides.
 
     > [!NOTE]    
-    > The Authentication options is selected by default in the Default template, and not in the Blank one.
+    > The Authentication option is selected by default in the Default template, and not in the Blank one.
     > This option is dependent on the [DependencyInjection](#extensions) option and is only shown if the latter is enabled.
 
 ![](assets/authentication.jpg)

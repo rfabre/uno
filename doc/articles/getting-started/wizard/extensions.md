@@ -11,9 +11,9 @@ To learn more about Uno Extensions, visit [this page](xref:Overview.Features).
 The available extensions are:
     
 - **General**
-  - **Dependency Injection**
-    Dependency Injection (DI) is an Inversion of Control (IoC) technique which enables consuming classes not to worry about the management or creation of their dependencies, and instead rely on a central service to provide it when needed, based how the provider was configured.      
-    Uno Platform brings the power of [Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) to all OSs Uno Platform targets, and adds its additional functionality via its Uno.Extensions.DependencyInjection library, which you can learn more about [here](xref:Overview.DependencyInjection).
+  - **Dependency Injection**  
+    Dependency Injection (DI) is an Inversion of Control (IoC) technique that enables consuming classes not to worry about the management or creation of their dependencies and instead rely on a central service to provide it when needed, based on how the provider was configured.  
+    Uno Platform brings the power of [Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) to all OSs Uno Platform targets and adds its additional functionality via its Uno.Extensions.DependencyInjection library, which you can learn more about [here](xref:Overview.DependencyInjection).
 
     > [!NOTE]
     > Some other features (e.g. Configuration, Http, Authentication as well as others) depend on DI and will be disabled if DI is not enabled.
@@ -30,22 +30,22 @@ The available extensions are:
     Refer to the [documentation](xref:Overview.Http#refit) to learn how to use it in an Uno Platform app.
 
   - **Localization**
-    The Localization extension is responsible for managing globalization of your app.  
+    The Localization extension is responsible for managing globalization in your app.  
     This enables keeping all translations of your app in a single place and enables the user to easily switch the UI language.
 
     The generated app contains *resw* files which can be used to define the application strings. The defined languages are configured in *appsettings.json*. Follow [this link](Learn.Tutorials.Localization.HowToUseLocalization#3-update-the-ui-culture-with-localizationsettings) to learn how to switch the UI culture.
 
     ![](Assets/localization.jpg)
     
-    The default settings comes with the following pre-set languages: English (*en*), Spanish (*es*), French (*fr*), and Potuguese - Brazil (*pt-BR*).
+    The default settings come with the following pre-set languages: English (*en*), Spanish (*es*), French (*fr*), and Portuguese - Brazil (*pt-BR*).
 
     Uno.Extensions.Localization expands [Microsoft.Extensions.Localization](https://learn.microsoft.com/en-us/dotnet/core/extensions/localization) to all OSs supported by Uno Platform.  
     Read the full Localization documentation [here](xref:Overview.Localization) or learn more about [Globalization](https://learn.microsoft.com/en-us/dotnet/core/extensions/globalization).
 
 - **Navigation**
   - **Regions**
-    Navigation is an integral part of any app and for that, Uno Platform has developed a navigation system that is registered and served using DI and is fully integrated with the navigation specific UI controls out-there, such as `Frame`, `NavigationView`, and `TabBar`.  
-    It is a region-based navigation. A Region is the abstraction of the view responsible for handling navigation. Regions are structured into a logical hierarchical representation that shadows the navigation-aware controls in the visual hierarchy. The hierarchy allows navigation requests to be propagated up to parent and down to child regions as required.  
+    Navigation is an integral part of any app and for that, Uno Platform has developed a navigation system that is registered and served using DI and is fully integrated with the navigation-specific UI controls out there, such as `Frame`, `NavigationView`, and `TabBar`.  
+    It is a region-based navigation. A Region is the abstraction of the view responsible for handling navigation. Regions are structured into a logical hierarchical representation that shadows the navigation-aware controls in the visual hierarchy. The hierarchy allows navigation requests to be propagated up to the parent and down to child regions as required.  
     This library is also responsible for showing pop-ups, flyouts, dialogs, and other interactions with the user.  
     Learn more about Uno's Navigation library [here](xref:Overview.Navigation).
 
