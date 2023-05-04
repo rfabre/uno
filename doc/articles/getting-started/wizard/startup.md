@@ -31,7 +31,7 @@ This is introductory page to the wizard and lets you choose between the blank or
     This includes a backend ASP.NET Core server app which you can use to write your server API endpoints, and is also used to host the WASM app.  
     It also includes a project with Uno.UITest preinstalled. This package includes important UI testing features of which you can learn [here](xref:Uno.UITest.GetStarted).  
 
-    In addition, it includes basked in support provided by Uno.Extensions. Uno Extensions extends [Microsoft.Extensions.*](https://learn.microsoft.com/en-us/dotnet/standard/runtime-libraries-overview#extensions-to-the-runtime-libraries) by making sure it runs smoothly on all platforms and adding additional features and utils.
+    In addition, it includes baked in support provided by Uno.Extensions. Uno Extensions extends [Microsoft.Extensions.*](https://learn.microsoft.com/en-us/dotnet/standard/runtime-libraries-overview#extensions-to-the-runtime-libraries) by making sure it runs smoothly on all platforms and adding additional features and utils.
 
     This template includes out-of-the-box support for many of Uno Platform flagship products, Extensions, and Toolkit:
 
