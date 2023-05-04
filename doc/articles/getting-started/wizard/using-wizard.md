@@ -40,38 +40,56 @@ Clicking *Cancel* returns to the [main page](#selecting-startup-type).
 
     [!INCLUDE [Framework](framework.md)]
 
-1. ### Platforms
+---
+
+2. ### Platforms
 
     [!INCLUDE [Platforms](platforms.md)]
 
-1. ### Presentation
+---
 
-    [!INCLUDE [Presentation](presentation.md)]    
+3. ### Presentation
 
-1. ### Themes
+    [!INCLUDE [Presentation](presentation.md)]
+
+---
+
+4. ### Themes
 
     [!INCLUDE [Themes](themes.md)]
 
-1. ### Extensions
+---
+
+5. ### Extensions
 
     [!INCLUDE [Extensions](extensions.md)]
 
-1. ### Projects
+---
+
+6. ### Projects
 
     [!INCLUDE [Projects](projects.md)]
 
-1. ### Features
+---
+
+7. ### Features
 
     [!INCLUDE [Features](features.md)]
 
-1. ### Authentication
+---
+
+8. ### Authentication
 
     [!INCLUDE [Authentication](authentication.md)]
 
-1. ### Application
+---
+
+9. ### Application
 
     [!INCLUDE [Application](application.md)]
 
-1. ### Testing
+---
+
+10. ### Testing
 
     [!INCLUDE [Testing](testing.md)]
