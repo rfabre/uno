@@ -10,7 +10,7 @@ The [Uno Platform Visual Studio extension](https://marketplace.visualstudio.com/
 
 After having installed the required workloads and the extension (use [Uno-Check](xref:UnoCheck.UsingUnoCheck) to verify that your environment is Uno Platform ready), search and click the Uno Platform App in your new project to open the wizard.
 
-![](assets/create-new-project.jpg)
+![Visual Studio create new project window](assets/create-new-project.jpg)
 
 When prompted, configure the project and solution name and select the location to which the files should be saved, and click Create or hit <kbd>Enter</kbd>.
 

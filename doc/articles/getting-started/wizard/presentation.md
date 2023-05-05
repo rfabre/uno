@@ -17,4 +17,4 @@ This setting allows you to choose between MVVM and MVUX.
 
     To learn more about the MVUX pattern, read [this](xref:Overview.Mvux.Overview).
 
-![](assets/presentation.jpg)
+![Presentation tab in the wizard](assets/presentation.jpg)

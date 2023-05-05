@@ -4,7 +4,7 @@ uid: Uno.GettingStarted.UsingWizard.Startup
 
 The main page of the wizard shows and the default template is selected.
 
-![](assets/intro.jpg)
+![Intro screen in the wizard](assets/intro.jpg)
 
 This is an introductory page to the wizard and lets you choose between the blank or default template, and also enables you to customize that selection even further if you click *Customize*.
 
@@ -23,7 +23,7 @@ This is an introductory page to the wizard and lets you choose between the blank
 
     This is the structure of the generated blank project:
 
-    ![](assets/blank-project-structure.jpg)    
+    ![Visual Studio Solution Explorer showing generated blank project](assets/blank-project-structure.jpg)    
 
 - **Default**  
     The default Project also consists of the above platforms: Windows, Android, iOS, macOS, GTK, and WASM, however, this template is preselected with additional features and pre-installed packages to help save even more saving you from typing redundant boilerplate code.
@@ -82,6 +82,10 @@ This is an introductory page to the wizard and lets you choose between the blank
         The [Uno Toolkit](https://platform.uno/uno-toolkit) provides a set of controls and UI utils.  
         It enables you to easily switch themes (Fluent, Material, Cupertino), provides many UI controls and components, UI graphics utilities, and access to device sensors and other features.  
 
+    The generated project has the following structure:
+    
+    ![Visual Studio Solution Explorer showing generated default project](assets/default-project-structure.jpg)
+
 ## Customization
                     
 The *Customize* button lets you customize the selected template and fine-tune which features should be included with the generated project.  
@@ -90,4 +94,4 @@ When clicking *Customize*, a wizard opens with the pre-selected settings per the
 > [!NOTE]  
 > When the project opens for the first time, a popup may show up asking to Reload the projects, this is normal.
 >
-> ![](assets/reload-projects.jpg)
+> ![Visual Studio message requesting reload of projects](assets/reload-projects.jpg)

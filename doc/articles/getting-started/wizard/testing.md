@@ -10,4 +10,4 @@ uid: Uno.GettingStarted.UsingWizard.Themes
     Adds an NUnit-powered test app that provides UI testing capabilities using Uno Platform's UI testing tools (Uno.UITest).  
     To learn more about UI Testing in Uno Platform apps, read [this](xref:Uno.UITest.GetStarted).
 
-![](assets/testing.jpg)
+![Testing tab in the wizard](assets/testing.jpg)

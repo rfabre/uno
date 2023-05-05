@@ -10,4 +10,4 @@ This setting lets you choose the .NET version to target. The default is .NET 7.0
 
 Though in some cases you would still want to use the older [.NET 6](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-6) version.
 
-![](assets/framework.jpg)
+![Framework tab in the wizard](assets/framework.jpg)

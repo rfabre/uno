@@ -23,4 +23,4 @@ uid: Uno.GettingStarted.UsingWizard.Authentication
     > The Authentication option is selected by default in the Default template, and not in the Blank one.
     > This option is dependent on the [DependencyInjection](#extensions) option and is only shown if the latter is enabled.
 
-![](assets/authentication.jpg)
+![Authentication tab in the wizard](assets/authentication.jpg)

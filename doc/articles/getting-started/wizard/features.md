@@ -19,4 +19,4 @@ uid: Uno.GettingStarted.UsingWizard.Features
 - **Visual Studio Code debugging**  
     Enables Uno Platform debugging in Visual Studio Code.
 
-![](assets/features.jpg)
+![Features tab in the wizard](assets/features.jpg)

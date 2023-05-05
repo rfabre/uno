@@ -12,7 +12,7 @@ This option sets the generated theme or skin to be used in the generated app. Th
 
     The generated project will have the material theme applied:
 
-    ![](assets/material.jpg)
+    ![A screenshot demonstrating material design in the running app](assets/material.jpg)
 
 - **Fluent**  
     Fluent is an open-source design system that drives Windows and WinUI's default style.  

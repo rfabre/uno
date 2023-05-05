@@ -41,7 +41,7 @@ The available extensions are:
 
     The generated app contains *resw* files which can be used to define the application strings. The defined languages are configured in *appsettings.json*. Follow [this link](Learn.Tutorials.Localization.HowToUseLocalization#3-update-the-ui-culture-with-localizationsettings) to learn how to switch the UI culture.
 
-    ![](Assets/localization.jpg)
+    ![Visual Studio Solution Explorer showing localization files](assets/localization.jpg)
     
     The default settings come with the following pre-set languages: English (*en*), Spanish (*es*), French (*fr*), and Portuguese - Brazil (*pt-BR*).
 
@@ -77,4 +77,4 @@ The available extensions are:
   Refer to the [Logging](xref:Overview.Logging) documentation for more information.
 
 
-![](assets/extensions.jpg)
+![Extensions tab in the wizard](assets/extensions.jpg)
