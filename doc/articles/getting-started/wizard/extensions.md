@@ -4,8 +4,11 @@ uid: Uno.GettingStarted.UsingWizard.Extensions
 
 Enables setting which Uno Extensions should be included with the generated projects.
 Uno Extensions is a set of Extensions that cover common essentials application core building blocks, and are supported on all operating systems Uno Platform targets.  
-The Uno.Extensions follows the Microsoft.Extensions model that creates a host environment where you can register additional dependencies. The registered dependencies are then available throughout the application via the Services (`IServiceProvider`) property on the `IHost` instance.
-    
+The Uno.Extensions follows the Microsoft.Extensions model that creates a host environment where you can register additional dependencies. The registered dependencies are then available throughout the application via the Services (`IServiceProvider`) property on the [`IHost`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.ihost) instance.
+
+Hosting (`IHost`) keeps the central entry point of the app and encapsulates its core building blocks, such as [DI](#dependency-injection), [Logging](#logging), as well as controlling its state and shutdown.  
+Read more about Hosting [here](https://learn.microsoft.com/en-us/dotnet/core/extensions/generic-host).
+
 To learn more about Uno Extensions, visit [this page](xref:Overview.Features).
     
 The available extensions are:
@@ -55,7 +58,8 @@ The available extensions are:
 - **Logging**  
     Logging is a crucial component in an app that enables the developer to emit log messages whenever an important action or execution is taken by the app. This then lets you trace back any errors or issues that may arise in the future.
     There are several Logging tools out there, with one of the most common of them being [Microosft.Extensions.Logging](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging).  
-    Uno Platform provides its Uno.Extensions.Logging to bring Logging to all platforms it supports.      
+    Uno Platform provides its Uno.Extensions.Logging to bring Logging to all platforms it supports.
+
     Uno.Extensions.Logging is covered in more detail [here](xref:Overview.Logging).
 
   - **Console**  

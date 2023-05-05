@@ -30,7 +30,7 @@ This is an introductory page to the wizard and lets you choose between the blank
 
     In addition, it includes baked-in support provided by Uno.Extensions. Uno Extensions extends [Microsoft.Extensions.*](https://learn.microsoft.com/en-us/dotnet/standard/runtime-libraries-overview#extensions-to-the-runtime-libraries) by making sure it runs smoothly on all platforms and adding additional features and utils.
 
-    This template includes out-of-the-box support for many of Uno Platform's flagship products, Extensions, and Toolkit:
+    This template is generated with Uno Platform's flagship products pre-installed, these include Extensions, and Toolkit.
 
     - Configuration  
         This extension provides a way to load application configuration data from and to various sources using the [Options Pattern](https://learn.microsoft.com/en-us/dotnet/core/extensions/options).
@@ -45,7 +45,7 @@ This is an introductory page to the wizard and lets you choose between the blank
 
     - Logging  
         Logging is a crucial component in an app that enables the developer to emit log messages whenever an important action or execution is taken by the app. This then lets you trace back any errors or issues that may arise in the future.  
-        The default template generates an app configured to write debug-level logging information to the Console, and set-up using Configuration, Hosting, and DI.  
+        The default template generates an app configured to write debug-level logging information to the Console, and set-up using Configuration, Hosting, and DI.
         Uno.Extensions.Logging is covered in more detail [here](xref:Overview.Logging).
 
     - Navigation  
