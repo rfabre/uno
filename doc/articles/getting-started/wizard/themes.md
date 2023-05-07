@@ -20,4 +20,4 @@ This option sets the generated theme or skin to be used in the generated app. Th
   
 For instance, this very wizard uses the Material theme.
 
-![](assets/themes.jpg)
+![Themes tab in the wizard](assets/themes.jpg)
