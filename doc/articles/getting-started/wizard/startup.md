@@ -28,12 +28,12 @@ This is an introductory page to the wizard and lets you choose between the blank
 - **Default**  
     The default Project also consists of the above platforms: Windows, Android, iOS, macOS, GTK, and WASM, however, this template is preselected with additional features and pre-installed packages to help save even more saving you from typing redundant boilerplate code.
     This includes a backend ASP.NET Core server app which you can use to write your server API endpoints and is also used to host the WASM app.  
-    It also includes a project with Uno.UITest preinstalled. This package includes important UI testing features of which you can learn [here](xref:Uno.UITest.GetStarted).  
+    It also includes a project with Uno.UITest preinstalled. This package includes important UI testing features, which you can learn about [here](xref:Uno.UITest.GetStarted).  
 
     In addition, it includes baked-in support provided by Uno.Extensions. Uno Extensions extends [Microsoft.Extensions.*](https://learn.microsoft.com/en-us/dotnet/standard/runtime-libraries-overview#extensions-to-the-runtime-libraries) by making sure it runs smoothly on all platforms and adding additional features and utils.
 
-    This template is generated with Uno Platform's flagship products pre-installed, these include Extensions, and Toolkit.
-    The topics are briefly explained in this list, but are further explained in depth further down in this page. Feel free to click the titles to scroll down to that topic.
+    This template is generated with Uno Platform's flagship products pre-installed, these include Extensions and Toolkit.
+    The topics are briefly explained in this list but are further explained in depth further down on this page. Feel free to click the titles to scroll down to that topic.
 
     - [Configuration](#configuration)  
         This extension provides a way to load application configuration data from and to various sources using the [Options Pattern](https://learn.microsoft.com/en-us/dotnet/core/extensions/options).
@@ -48,7 +48,7 @@ This is an introductory page to the wizard and lets you choose between the blank
 
     - [Logging](#logging)  
         Logging is a crucial component in an app that enables the developer to emit log messages whenever an important action or execution is taken by the app. This then lets you trace back any errors or issues that may arise in the future.  
-        The default template generates an app configured to write debug-level logging information to the Console, and set-up using Configuration, Hosting, and DI.
+        The default template generates an app configured to write debug-level logging information to the Console, and set up using Configuration, Hosting, and DI.
         Uno.Extensions.Logging is covered in more detail [here](xref:Overview.Logging).
 
     - [Navigation](#navigation)  
