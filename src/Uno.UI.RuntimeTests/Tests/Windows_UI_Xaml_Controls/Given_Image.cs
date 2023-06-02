@@ -174,7 +174,7 @@ namespace Uno.UI.RuntimeTests.Tests.Windows_UI_Xaml_Controls
 		[RunsOnUIThread]
 		[DataRow("ms-appx:///Assets/dotnet_bot_assets.png", false)]
 		[DataRow("ms-appx:///Uno.UI.RuntimeTests/Assets/dotnet_bot_assets.png", true)]
-		[DataRow("ms-appx:///Uno.UI.RuntimeTests/Assets/dotnet_bot_link_assets.png", true)]
+		[DataRow("ms-appx:///Assets/dotnet_bot_link_assets.png", false)]
 		[DataRow("ms-appx:///Uno.UI.RuntimeTests/Assets/dotnet_bot_link_assets.png", true)]
 		[DataRow("ms-appx:///Assets/dotnet_bot_targetpath_assets.png", false)]
 		[DataRow("ms-appx:///Uno.UI.RuntimeTests/Assets/dotnet_bot_targetpath_assets.png", true)]
@@ -205,7 +205,7 @@ namespace Uno.UI.RuntimeTests.Tests.Windows_UI_Xaml_Controls
 
 		[TestMethod]
 		[RunsOnUIThread]
-		[DataRow("ms-appx:///Images/dotnet_bot_assets.png", false)]
+		[DataRow("ms-appx:///Images/dotnet_bot_images.png", false)]
 		[DataRow("ms-appx:///Uno.UI.RuntimeTests/Assets/Images/dotnet_bot_images.png", true)]
 		[DataRow("ms-appx:///Images/dotnet_bot_link_images.png", false)]
 		[DataRow("ms-appx:///Uno.UI.RuntimeTests/Assets/Images/dotnet_bot_link_images.png", true)]
