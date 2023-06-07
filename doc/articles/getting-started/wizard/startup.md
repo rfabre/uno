@@ -26,8 +26,8 @@ This is an introductory page to the wizard and lets you choose between the blank
     ![Visual Studio Solution Explorer showing generated blank project](assets/blank-project-structure.jpg)    
 
 - **Default**  
-    The default Project also consists of the above platforms: Windows, Android, iOS, macOS, GTK, and WASM, however, this template is preselected with additional features and pre-installed packages to help save even more saving you from typing redundant boilerplate code.
-    This includes a backend ASP.NET Core server app which you can use to write your server API endpoints and is also used to host the WASM app.  
+    The default Project also consists of the above platforms: Windows, Android, iOS, Mac Catalyst, GTK, and WebAssembly, however, this template is preselected with additional features and pre-installed packages to help save even more saving you from typing redundant boilerplate code.
+    This includes an ASP.NET Core server app backend which you can use to write your server API endpoints and is also used to host the WASM app.  
     It also includes a project with Uno.UITest preinstalled. This package includes important UI testing features, which you can learn about [here](xref:Uno.UITest.GetStarted).  
 
     In addition, it includes baked-in support provided by Uno.Extensions. Uno Extensions extends [Microsoft.Extensions.*](https://learn.microsoft.com/en-us/dotnet/standard/runtime-libraries-overview#extensions-to-the-runtime-libraries) by making sure it runs smoothly on all platforms and adding additional features and utils.
