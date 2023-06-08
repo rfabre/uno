@@ -1,5 +1,8 @@
 using System;
+using Uno.Foundation.Extensibility;
+using Uno.Media.Playback;
 using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.UI.Xaml.Controls;
 using static Private.Infrastructure.TestServices;
 
@@ -14,6 +17,11 @@ namespace Uno.UI.RuntimeTests.Tests.Windows_UI_Xaml_Controls
 		[TestMethod]
 		public async void When_NotAutoPlay_Source()
 		{
+			if (MediaPlayer.ImplementedByExtensions && !ApiExtensibility.IsRegistered<IMediaPlayerExtension>())
+			{
+				Assert.Inconclusive("Platform not supported.");
+			}
+
 			var sut = new MediaPlayerElement()
 			{
 				AutoPlay = false,
