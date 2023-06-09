@@ -43,6 +43,18 @@ namespace Uno.UI {
 			return "ok";
 		}
 
+		public static setAnimationPropertiesNative(
+			id: number,
+			path: string,
+			autoplay: boolean,
+			stretch: string,
+			rate: number,
+			cacheKey: string,
+			data?: AnimationData) {
+
+			Lottie.setAnimationProperties({ elementId: id, jsonPath: path, autoplay: autoplay, stretch: stretch, rate: rate, cacheKey: cacheKey }, data);
+		}
+
 		public static stop(elementId: number): string {
 			Lottie.withPlayer(p => {
 				const a = Lottie._runningAnimations[elementId].animation;
